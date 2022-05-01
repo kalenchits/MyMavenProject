@@ -1,10 +1,10 @@
-package ptests;
+package peopleTests;
 
 import org.junit.Assert;
 import org.junit.Test;
 import people.Person;
 
-public class PersonTest {
+public class Person2Test {
 
     @Test
     public void personConstructorTest(){

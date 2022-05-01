@@ -1,4 +1,4 @@
-package ptests;
+package peopleTests;
 
 import org.junit.Assert;
 import org.junit.Test;

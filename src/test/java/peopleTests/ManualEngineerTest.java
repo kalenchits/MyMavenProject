@@ -1,9 +1,8 @@
-package ptests;
+package peopleTests;
 
 import org.junit.Assert;
 import org.junit.Test;
 import people.ManualEngineer;
-import people.Person;
 
 public class ManualEngineerTest {
 
