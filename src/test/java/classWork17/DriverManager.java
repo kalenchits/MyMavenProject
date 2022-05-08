@@ -8,7 +8,7 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 
 public class DriverManager {
 
-    static WebDriver getDriver(Config config){
+    public static WebDriver getDriver(Config config){
         switch (config){
             case CHROME:
                 return getChromeDriver();
@@ -24,7 +24,7 @@ public class DriverManager {
     private static WebDriver getChromeDriver(){
         ChromeOptions caps = new ChromeOptions();
         caps.addArguments("start-maximized");
-        return new ChromeDriver();
+        return new ChromeDriver(caps);
     }
 
     private static WebDriver getFireFoxDriver(){
