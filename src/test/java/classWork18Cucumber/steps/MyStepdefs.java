@@ -1,6 +1,6 @@
 package classWork18Cucumber.steps;
 
-import classWork17.Driver;
+import classWork17DriverManager.Driver;
 import classWork18Cucumber.pages.BookingMainPage;
 import classWork18Cucumber.pages.BookinkResultPage;
 import io.cucumber.java.After;

@@ -1,16 +1,15 @@
-package classWork17;
+package classWork17DriverManager;
 
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.chrome.ChromeOptions;
 
+import java.net.MalformedURLException;
 import java.util.concurrent.TimeUnit;
 
 public class Driver {
 
     private static WebDriver driver;
 
-    public static WebDriver getWebDriver(){
+    public static WebDriver getWebDriver() throws MalformedURLException {
         if (driver == null){
             driver = DriverManager.getDriver(Config.CHROME);
         }
@@ -28,7 +27,7 @@ public class Driver {
         driver.quit();
         driver = null;
     }
-    public static void initDriver(Config config){
+    public static void initDriver(Config config) throws MalformedURLException {
         if (driver == null){
             driver = DriverManager.getDriver(config);
         }

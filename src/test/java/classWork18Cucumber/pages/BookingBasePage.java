@@ -1,6 +1,6 @@
 package classWork18Cucumber.pages;
 
-import classWork17.Driver;
+import classWork17DriverManager.Driver;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
