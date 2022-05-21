@@ -6,13 +6,14 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.FluentWait;
 
+import java.net.MalformedURLException;
 import java.time.Duration;
 import java.util.NoSuchElementException;
 import java.util.concurrent.TimeUnit;
 
 public class DraftPage {
 
-    public static void main(String[] args) {
+    public static void main(String[] args) throws MalformedURLException {
 
         WebDriver driver = Driver.getWebDriver();
 

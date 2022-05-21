@@ -8,10 +8,11 @@ import java.util.concurrent.TimeUnit;
 public class Driver {
 
     private static WebDriver driver;
+    protected static Config config;
 
     public static WebDriver getWebDriver() throws MalformedURLException {
         if (driver == null){
-            driver = DriverManager.getDriver(Config.CHROME);
+            driver = DriverManager.getDriver(config);
         }
         setTimeouts(30);
         return driver;
@@ -32,4 +33,10 @@ public class Driver {
             driver = DriverManager.getDriver(config);
         }
     }
+
+    public static void setConfig(Config theConfig) {
+        config = theConfig;
+    }
+
+
 }
