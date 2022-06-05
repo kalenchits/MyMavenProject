@@ -1,0 +1,856 @@
+15:54:55,920 FATAL main L4JLogging:main:11 - Message with level FATAL
+15:54:55,926 ERROR main L4JLogging:main:12 - Message with level ERROR
+15:54:55,926  WARN main L4JLogging:main:13 - Message with level WARN
+15:54:55,927  INFO main L4JLogging:main:14 - Message with level INFO
+15:57:01,219 FATAL main L4JLogging:main:11 - Message with level FATAL
+15:57:01,227 ERROR main L4JLogging:main:12 - Message with level ERROR
+15:57:01,227  WARN main L4JLogging:main:13 - Message with level WARN
+15:57:01,228  INFO main L4JLogging:main:14 - Message with level INFO
+15:57:01,228 DEBUG main L4JLogging:main:15 - Message with level DEBUG
+15:57:01,228 TRACE main L4JLogging:main:16 - Message with level TRACE
+15:59:28,688 FATAL main L4JLogging:main:11 - Message with level FATAL
+15:59:28,697 ERROR main L4JLogging:main:12 - Message with level ERROR
+15:59:28,698  WARN main L4JLogging:main:13 - Message with level WARN
+15:59:28,698  INFO main L4JLogging:main:14 - Message with level INFO
+15:59:28,698 DEBUG main L4JLogging:main:15 - Message with level DEBUG
+15:59:28,699 TRACE main L4JLogging:main:16 - Message with level TRACE
+17:04:13,251  INFO main FakeBaseSteps:beforeTest:16 - Initializing WebDriver..
+17:04:13,489 DEBUG main InternalLoggerFactory:useLog4JLoggerFactory:89 - Using Log4J as the default logging framework
+17:04:13,497 DEBUG main ResourceLeakDetector:<clinit>:129 - -Dio.netty.leakDetection.level: simple
+17:04:13,498 DEBUG main ResourceLeakDetector:<clinit>:130 - -Dio.netty.leakDetection.targetRecords: 4
+17:04:13,505 DEBUG main ResourceLeakDetectorFactory:newResourceLeakDetector:196 - Loaded default ResourceLeakDetector: io.netty.util.ResourceLeakDetector@12d2ce03
+17:04:13,536 DEBUG main PlatformDependent0:explicitNoUnsafeCause0:460 - -Dio.netty.noUnsafe: false
+17:04:13,537 DEBUG main PlatformDependent0:javaVersion0:954 - Java version: 14
+17:04:13,541 DEBUG main PlatformDependent0:<clinit>:135 - sun.misc.Unsafe.theUnsafe: available
+17:04:13,543 DEBUG main PlatformDependent0:<clinit>:159 - sun.misc.Unsafe.copyMemory: available
+17:04:13,544 DEBUG main PlatformDependent0:<clinit>:202 - java.nio.Buffer.address: available
+17:04:13,546 DEBUG main PlatformDependent0:<clinit>:282 - direct buffer constructor: unavailable
+java.lang.UnsupportedOperationException: Reflective setAccessible(true) disabled
+	at io.netty.util.internal.ReflectionUtil.trySetAccessible(ReflectionUtil.java:31)
+	at io.netty.util.internal.PlatformDependent0$4.run(PlatformDependent0.java:253)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:312)
+	at io.netty.util.internal.PlatformDependent0.<clinit>(PlatformDependent0.java:247)
+	at io.netty.util.internal.PlatformDependent.isAndroid(PlatformDependent.java:294)
+	at io.netty.util.internal.PlatformDependent.<clinit>(PlatformDependent.java:88)
+	at io.netty.util.HashedWheelTimer.<init>(HashedWheelTimer.java:114)
+	at io.netty.util.HashedWheelTimer.<init>(HashedWheelTimer.java:251)
+	at io.netty.util.HashedWheelTimer.<init>(HashedWheelTimer.java:224)
+	at io.netty.util.HashedWheelTimer.<init>(HashedWheelTimer.java:203)
+	at org.asynchttpclient.DefaultAsyncHttpClient.newNettyTimer(DefaultAsyncHttpClient.java:111)
+	at org.asynchttpclient.DefaultAsyncHttpClient.<init>(DefaultAsyncHttpClient.java:90)
+	at org.asynchttpclient.Dsl.asyncHttpClient(Dsl.java:32)
+	at org.openqa.selenium.remote.http.netty.NettyClient.createHttpClient(NettyClient.java:119)
+	at org.openqa.selenium.remote.http.netty.NettyClient.<clinit>(NettyClient.java:52)
+	at org.openqa.selenium.remote.http.netty.NettyClient$Factory.createClient(NettyClient.java:160)
+	at org.openqa.selenium.remote.HttpCommandExecutor.<init>(HttpCommandExecutor.java:107)
+	at org.openqa.selenium.remote.HttpCommandExecutor.<init>(HttpCommandExecutor.java:94)
+	at org.openqa.selenium.remote.HttpCommandExecutor.<init>(HttpCommandExecutor.java:85)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.<init>(DriverCommandExecutor.java:80)
+	at org.openqa.selenium.chromium.ChromiumDriverCommandExecutor.<init>(ChromiumDriverCommandExecutor.java:35)
+	at org.openqa.selenium.chrome.ChromeDriver$ChromeDriverCommandExecutor.<init>(ChromeDriver.java:118)
+	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:106)
+	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:93)
+	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:82)
+	at classWork17DriverManager.DriverManager.getChromeDriver(DriverManager.java:27)
+	at classWork17DriverManager.DriverManager.getDriver(DriverManager.java:14)
+	at classWork17DriverManager.Driver.initDriver(Driver.java:31)
+	at steps.fake.FakeBaseSteps.beforeTest(FakeBaseSteps.java:17)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at cucumber.runtime.Utils$1.call(Utils.java:26)
+	at cucumber.runtime.Timeout.timeout(Timeout.java:16)
+	at cucumber.runtime.Utils.invoke(Utils.java:20)
+	at cucumber.runtime.java.JavaHookDefinition.execute(JavaHookDefinition.java:65)
+	at cucumber.runner.HookDefinitionMatch.runStep(HookDefinitionMatch.java:16)
+	at cucumber.runner.TestStep.executeStep(TestStep.java:65)
+	at cucumber.runner.TestStep.run(TestStep.java:50)
+	at cucumber.runner.TestCase.run(TestCase.java:42)
+	at cucumber.runner.Runner.runPickle(Runner.java:50)
+	at io.cucumber.junit.PickleRunners$NoStepDescriptions.run(PickleRunners.java:146)
+	at io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:68)
+	at io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:23)
+	at org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)
+	at org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)
+	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:413)
+	at io.cucumber.junit.Cucumber.runChild(Cucumber.java:144)
+	at io.cucumber.junit.Cucumber.runChild(Cucumber.java:65)
+	at org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)
+	at org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)
+	at io.cucumber.junit.Cucumber$RunCucumber.evaluate(Cucumber.java:174)
+	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:413)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:365)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeWithRerun(JUnit4Provider.java:273)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:238)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:159)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:384)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:345)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:126)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)
+17:04:13,554 DEBUG main PlatformDependent0:<clinit>:350 - java.nio.Bits.unaligned: available, true
+17:04:13,557 DEBUG main PlatformDependent0:<clinit>:414 - jdk.internal.misc.Unsafe.allocateUninitializedArray(int): unavailable
+java.lang.IllegalAccessException: class io.netty.util.internal.PlatformDependent0$6 cannot access class jdk.internal.misc.Unsafe (in module java.base) because module java.base does not export jdk.internal.misc to unnamed module @6a1aab78
+	at java.base/jdk.internal.reflect.Reflection.newIllegalAccessException(Reflection.java:376)
+	at java.base/java.lang.reflect.AccessibleObject.checkAccess(AccessibleObject.java:647)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:556)
+	at io.netty.util.internal.PlatformDependent0$6.run(PlatformDependent0.java:375)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:312)
+	at io.netty.util.internal.PlatformDependent0.<clinit>(PlatformDependent0.java:366)
+	at io.netty.util.internal.PlatformDependent.isAndroid(PlatformDependent.java:294)
+	at io.netty.util.internal.PlatformDependent.<clinit>(PlatformDependent.java:88)
+	at io.netty.util.HashedWheelTimer.<init>(HashedWheelTimer.java:114)
+	at io.netty.util.HashedWheelTimer.<init>(HashedWheelTimer.java:251)
+	at io.netty.util.HashedWheelTimer.<init>(HashedWheelTimer.java:224)
+	at io.netty.util.HashedWheelTimer.<init>(HashedWheelTimer.java:203)
+	at org.asynchttpclient.DefaultAsyncHttpClient.newNettyTimer(DefaultAsyncHttpClient.java:111)
+	at org.asynchttpclient.DefaultAsyncHttpClient.<init>(DefaultAsyncHttpClient.java:90)
+	at org.asynchttpclient.Dsl.asyncHttpClient(Dsl.java:32)
+	at org.openqa.selenium.remote.http.netty.NettyClient.createHttpClient(NettyClient.java:119)
+	at org.openqa.selenium.remote.http.netty.NettyClient.<clinit>(NettyClient.java:52)
+	at org.openqa.selenium.remote.http.netty.NettyClient$Factory.createClient(NettyClient.java:160)
+	at org.openqa.selenium.remote.HttpCommandExecutor.<init>(HttpCommandExecutor.java:107)
+	at org.openqa.selenium.remote.HttpCommandExecutor.<init>(HttpCommandExecutor.java:94)
+	at org.openqa.selenium.remote.HttpCommandExecutor.<init>(HttpCommandExecutor.java:85)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.<init>(DriverCommandExecutor.java:80)
+	at org.openqa.selenium.chromium.ChromiumDriverCommandExecutor.<init>(ChromiumDriverCommandExecutor.java:35)
+	at org.openqa.selenium.chrome.ChromeDriver$ChromeDriverCommandExecutor.<init>(ChromeDriver.java:118)
+	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:106)
+	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:93)
+	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:82)
+	at classWork17DriverManager.DriverManager.getChromeDriver(DriverManager.java:27)
+	at classWork17DriverManager.DriverManager.getDriver(DriverManager.java:14)
+	at classWork17DriverManager.Driver.initDriver(Driver.java:31)
+	at steps.fake.FakeBaseSteps.beforeTest(FakeBaseSteps.java:17)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at cucumber.runtime.Utils$1.call(Utils.java:26)
+	at cucumber.runtime.Timeout.timeout(Timeout.java:16)
+	at cucumber.runtime.Utils.invoke(Utils.java:20)
+	at cucumber.runtime.java.JavaHookDefinition.execute(JavaHookDefinition.java:65)
+	at cucumber.runner.HookDefinitionMatch.runStep(HookDefinitionMatch.java:16)
+	at cucumber.runner.TestStep.executeStep(TestStep.java:65)
+	at cucumber.runner.TestStep.run(TestStep.java:50)
+	at cucumber.runner.TestCase.run(TestCase.java:42)
+	at cucumber.runner.Runner.runPickle(Runner.java:50)
+	at io.cucumber.junit.PickleRunners$NoStepDescriptions.run(PickleRunners.java:146)
+	at io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:68)
+	at io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:23)
+	at org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)
+	at org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)
+	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:413)
+	at io.cucumber.junit.Cucumber.runChild(Cucumber.java:144)
+	at io.cucumber.junit.Cucumber.runChild(Cucumber.java:65)
+	at org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)
+	at org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)
+	at io.cucumber.junit.Cucumber$RunCucumber.evaluate(Cucumber.java:174)
+	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:413)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:365)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeWithRerun(JUnit4Provider.java:273)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:238)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:159)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:384)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:345)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:126)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)
+17:04:13,563 DEBUG main PlatformDependent0:<clinit>:446 - java.nio.DirectByteBuffer.<init>(long, int): unavailable
+17:04:13,564 DEBUG main PlatformDependent:unsafeUnavailabilityCause0:1116 - sun.misc.Unsafe: available
+17:04:13,566 DEBUG main PlatformDependent:estimateMaxDirectMemory:1227 - maxDirectMemory: 4253024256 bytes (maybe)
+17:04:13,569 DEBUG main PlatformDependent:tmpdir0:1246 - -Dio.netty.tmpdir: C:\Users\KALENC~1\AppData\Local\Temp (java.io.tmpdir)
+17:04:13,570 DEBUG main PlatformDependent:bitMode0:1325 - -Dio.netty.bitMode: 64 (sun.arch.data.model)
+17:04:13,572 DEBUG main PlatformDependent:isWindows0:1076 - Platform: Windows
+17:04:13,575 DEBUG main PlatformDependent:<clinit>:178 - -Dio.netty.maxDirectMemory: -1 bytes
+17:04:13,576 DEBUG main PlatformDependent:<clinit>:185 - -Dio.netty.uninitializedArrayAllocationThreshold: -1
+17:04:13,579 DEBUG main CleanerJava9:<clinit>:71 - java.nio.ByteBuffer.cleaner(): available
+17:04:13,580 DEBUG main PlatformDependent:<clinit>:205 - -Dio.netty.noPreferDirect: false
+17:04:13,618 DEBUG main PlatformDependent:<clinit>:967 - org.jctools-core.MpscChunkedArrayQueue: available
+17:04:13,655 DEBUG main InternalThreadLocalMap:<clinit>:86 - -Dio.netty.threadLocalMap.stringBuilder.initialSize: 1024
+17:04:13,655 DEBUG main InternalThreadLocalMap:<clinit>:89 - -Dio.netty.threadLocalMap.stringBuilder.maxSize: 4096
+17:04:14,079 DEBUG main JdkSslContext:<clinit>:97 - Default protocols (JDK): [TLSv1.3, TLSv1.2, TLSv1.1, TLSv1] 
+17:04:14,079 DEBUG main JdkSslContext:<clinit>:98 - Default cipher suites (JDK): [TLS_ECDHE_ECDSA_WITH_AES_256_GCM_SHA384, TLS_ECDHE_ECDSA_WITH_AES_128_GCM_SHA256, TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256, TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384, TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA, TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA, TLS_RSA_WITH_AES_128_GCM_SHA256, TLS_RSA_WITH_AES_128_CBC_SHA, TLS_RSA_WITH_AES_256_CBC_SHA, TLS_AES_128_GCM_SHA256, TLS_AES_256_GCM_SHA384]
+17:04:14,134 DEBUG main MultithreadEventLoopGroup:<clinit>:44 - -Dio.netty.eventLoopThreads: 16
+17:04:14,150 DEBUG main NioEventLoop:<clinit>:109 - -Dio.netty.noKeySetOptimization: false
+17:04:14,151 DEBUG main NioEventLoop:<clinit>:110 - -Dio.netty.selectorAutoRebuildThreshold: 512
+17:04:14,172 TRACE main NioEventLoop:openSelector:263 - instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@878452d
+17:04:14,175 TRACE main NioEventLoop:openSelector:263 - instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@5b080f3a
+17:04:14,177 TRACE main NioEventLoop:openSelector:263 - instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@773cbf4f
+17:04:14,179 TRACE main NioEventLoop:openSelector:263 - instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@6b54655f
+17:04:14,181 TRACE main NioEventLoop:openSelector:263 - instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@665e9289
+17:04:14,183 TRACE main NioEventLoop:openSelector:263 - instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@7d3430a7
+17:04:14,186 TRACE main NioEventLoop:openSelector:263 - instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@6f603e89
+17:04:14,189 TRACE main NioEventLoop:openSelector:263 - instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@2756c0a7
+17:04:14,190 TRACE main NioEventLoop:openSelector:263 - instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@350ec41e
+17:04:14,192 TRACE main NioEventLoop:openSelector:263 - instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@69637b10
+17:04:14,195 TRACE main NioEventLoop:openSelector:263 - instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@71984c3
+17:04:14,198 TRACE main NioEventLoop:openSelector:263 - instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@165b2f7f
+17:04:14,202 TRACE main NioEventLoop:openSelector:263 - instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@5536379e
+17:04:14,204 TRACE main NioEventLoop:openSelector:263 - instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@277f7dd3
+17:04:14,215 TRACE main NioEventLoop:openSelector:263 - instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@6c8bca63
+17:04:14,222 TRACE main NioEventLoop:openSelector:263 - instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@2364305a
+17:04:14,306 DEBUG main PooledByteBufAllocator:<clinit>:155 - -Dio.netty.allocator.numHeapArenas: 16
+17:04:14,307 DEBUG main PooledByteBufAllocator:<clinit>:156 - -Dio.netty.allocator.numDirectArenas: 16
+17:04:14,308 DEBUG main PooledByteBufAllocator:<clinit>:158 - -Dio.netty.allocator.pageSize: 8192
+17:04:14,308 DEBUG main PooledByteBufAllocator:<clinit>:163 - -Dio.netty.allocator.maxOrder: 9
+17:04:14,308 DEBUG main PooledByteBufAllocator:<clinit>:167 - -Dio.netty.allocator.chunkSize: 4194304
+17:04:14,309 DEBUG main PooledByteBufAllocator:<clinit>:168 - -Dio.netty.allocator.smallCacheSize: 256
+17:04:14,309 DEBUG main PooledByteBufAllocator:<clinit>:169 - -Dio.netty.allocator.normalCacheSize: 64
+17:04:14,310 DEBUG main PooledByteBufAllocator:<clinit>:170 - -Dio.netty.allocator.maxCachedBufferCapacity: 32768
+17:04:14,310 DEBUG main PooledByteBufAllocator:<clinit>:171 - -Dio.netty.allocator.cacheTrimInterval: 8192
+17:04:14,311 DEBUG main PooledByteBufAllocator:<clinit>:172 - -Dio.netty.allocator.cacheTrimIntervalMillis: 0
+17:04:14,312 DEBUG main PooledByteBufAllocator:<clinit>:173 - -Dio.netty.allocator.useCacheForAllThreads: false
+17:04:14,313 DEBUG main PooledByteBufAllocator:<clinit>:174 - -Dio.netty.allocator.maxCachedByteBuffersPerChunk: 1023
+17:04:14,339 DEBUG main ByteBufUtil:<clinit>:87 - -Dio.netty.allocator.type: pooled
+17:04:14,339 DEBUG main ByteBufUtil:<clinit>:96 - -Dio.netty.threadLocalDirectBufferSize: 0
+17:04:14,340 DEBUG main ByteBufUtil:<clinit>:99 - -Dio.netty.maxThreadLocalCharBufferSize: 16384
+17:04:15,347 DEBUG Forwarding newSession on session null to remote DefaultChannelId:<clinit>:79 - -Dio.netty.processId: 120708 (auto-detected)
+17:04:15,351 DEBUG Forwarding newSession on session null to remote NetUtil:<clinit>:136 - -Djava.net.preferIPv4Stack: false
+17:04:15,352 DEBUG Forwarding newSession on session null to remote NetUtil:<clinit>:137 - -Djava.net.preferIPv6Addresses: false
+17:04:15,371 DEBUG Forwarding newSession on session null to remote NetUtilInitializations:determineLoopback:129 - Loopback interface: lo (Software Loopback Interface 1, 127.0.0.1)
+17:04:15,373 DEBUG Forwarding newSession on session null to remote NetUtil:run:191 - Failed to get SOMAXCONN from sysctl and file \proc\sys\net\core\somaxconn. Default: 200
+17:04:15,407 DEBUG Forwarding newSession on session null to remote DefaultChannelId:<clinit>:101 - -Dio.netty.machineId: b0:5c:da:ff:fe:36:4d:f3 (auto-detected)
+17:04:15,532 DEBUG AsyncHttpClient-1-2 AbstractByteBuf:<clinit>:63 - -Dio.netty.buffer.checkAccessible: true
+17:04:15,533 DEBUG AsyncHttpClient-1-2 AbstractByteBuf:<clinit>:64 - -Dio.netty.buffer.checkBounds: true
+17:04:15,533 DEBUG AsyncHttpClient-1-2 ResourceLeakDetectorFactory:newResourceLeakDetector:196 - Loaded default ResourceLeakDetector: io.netty.util.ResourceLeakDetector@7632af75
+17:04:15,579 DEBUG AsyncHttpClient-1-2 Recycler:<clinit>:85 - -Dio.netty.recycler.maxCapacityPerThread: 4096
+17:04:15,579 DEBUG AsyncHttpClient-1-2 Recycler:<clinit>:86 - -Dio.netty.recycler.ratio: 8
+17:04:15,580 DEBUG AsyncHttpClient-1-2 Recycler:<clinit>:87 - -Dio.netty.recycler.chunkSize: 32
+17:04:15,580 DEBUG AsyncHttpClient-1-2 Recycler:<clinit>:88 - -Dio.netty.recycler.blocking: false
+17:04:16,813 DEBUG AsyncHttpClient-1-2 Brotli:<clinit>:38 - brotli4j not in the classpath; Brotli support will be unavailable.
+17:04:17,055 DEBUG main ThreadLocalRandom:newSeed:214 - -Dio.netty.initialSeedUniquifier: 0x0cd10ab48154d0ac
+17:04:47,201  INFO main FakeBaseSteps:afterTest:22 - Killing WebDriver..
+17:04:47,211 TRACE AsyncHttpClient-1-4 WebSocket08FrameEncoder:encode:131 - Encoding WebSocket Frame opCode=8 length=26
+17:04:48,086  INFO main FakeBaseSteps:beforeTest:16 - Initializing WebDriver..
+17:05:19,776  INFO main FakeBaseSteps:afterTest:22 - Killing WebDriver..
+17:05:19,777 TRACE AsyncHttpClient-1-7 WebSocket08FrameEncoder:encode:131 - Encoding WebSocket Frame opCode=8 length=26
+17:06:59,162  INFO main FakeBaseSteps:beforeTest:16 - Initializing WebDriver..
+17:06:59,379 DEBUG main InternalLoggerFactory:useLog4JLoggerFactory:89 - Using Log4J as the default logging framework
+17:06:59,384 DEBUG main ResourceLeakDetector:<clinit>:129 - -Dio.netty.leakDetection.level: simple
+17:06:59,384 DEBUG main ResourceLeakDetector:<clinit>:130 - -Dio.netty.leakDetection.targetRecords: 4
+17:06:59,390 DEBUG main ResourceLeakDetectorFactory:newResourceLeakDetector:196 - Loaded default ResourceLeakDetector: io.netty.util.ResourceLeakDetector@12d2ce03
+17:06:59,415 DEBUG main PlatformDependent0:explicitNoUnsafeCause0:460 - -Dio.netty.noUnsafe: false
+17:06:59,416 DEBUG main PlatformDependent0:javaVersion0:954 - Java version: 14
+17:06:59,419 DEBUG main PlatformDependent0:<clinit>:135 - sun.misc.Unsafe.theUnsafe: available
+17:06:59,421 DEBUG main PlatformDependent0:<clinit>:159 - sun.misc.Unsafe.copyMemory: available
+17:06:59,422 DEBUG main PlatformDependent0:<clinit>:202 - java.nio.Buffer.address: available
+17:06:59,423 DEBUG main PlatformDependent0:<clinit>:285 - direct buffer constructor: unavailable: Reflective setAccessible(true) disabled
+17:06:59,425 DEBUG main PlatformDependent0:<clinit>:350 - java.nio.Bits.unaligned: available, true
+17:06:59,426 DEBUG main PlatformDependent0:<clinit>:417 - jdk.internal.misc.Unsafe.allocateUninitializedArray(int): unavailable: class io.netty.util.internal.PlatformDependent0$6 cannot access class jdk.internal.misc.Unsafe (in module java.base) because module java.base does not export jdk.internal.misc to unnamed module @6a1aab78
+17:06:59,427 DEBUG main PlatformDependent0:<clinit>:446 - java.nio.DirectByteBuffer.<init>(long, int): unavailable
+17:06:59,427 DEBUG main PlatformDependent:unsafeUnavailabilityCause0:1116 - sun.misc.Unsafe: available
+17:06:59,429 DEBUG main PlatformDependent:estimateMaxDirectMemory:1227 - maxDirectMemory: 4253024256 bytes (maybe)
+17:06:59,431 DEBUG main PlatformDependent:tmpdir0:1246 - -Dio.netty.tmpdir: C:\Users\KALENC~1\AppData\Local\Temp (java.io.tmpdir)
+17:06:59,432 DEBUG main PlatformDependent:bitMode0:1325 - -Dio.netty.bitMode: 64 (sun.arch.data.model)
+17:06:59,432 DEBUG main PlatformDependent:isWindows0:1076 - Platform: Windows
+17:06:59,433 DEBUG main PlatformDependent:<clinit>:178 - -Dio.netty.maxDirectMemory: -1 bytes
+17:06:59,434 DEBUG main PlatformDependent:<clinit>:185 - -Dio.netty.uninitializedArrayAllocationThreshold: -1
+17:06:59,435 DEBUG main CleanerJava9:<clinit>:71 - java.nio.ByteBuffer.cleaner(): available
+17:06:59,436 DEBUG main PlatformDependent:<clinit>:205 - -Dio.netty.noPreferDirect: false
+17:06:59,450 DEBUG main PlatformDependent:<clinit>:967 - org.jctools-core.MpscChunkedArrayQueue: available
+17:06:59,482 DEBUG main InternalThreadLocalMap:<clinit>:86 - -Dio.netty.threadLocalMap.stringBuilder.initialSize: 1024
+17:06:59,483 DEBUG main InternalThreadLocalMap:<clinit>:89 - -Dio.netty.threadLocalMap.stringBuilder.maxSize: 4096
+17:06:59,793 DEBUG main JdkSslContext:<clinit>:97 - Default protocols (JDK): [TLSv1.3, TLSv1.2, TLSv1.1, TLSv1] 
+17:06:59,794 DEBUG main JdkSslContext:<clinit>:98 - Default cipher suites (JDK): [TLS_ECDHE_ECDSA_WITH_AES_256_GCM_SHA384, TLS_ECDHE_ECDSA_WITH_AES_128_GCM_SHA256, TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256, TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384, TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA, TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA, TLS_RSA_WITH_AES_128_GCM_SHA256, TLS_RSA_WITH_AES_128_CBC_SHA, TLS_RSA_WITH_AES_256_CBC_SHA, TLS_AES_128_GCM_SHA256, TLS_AES_256_GCM_SHA384]
+17:06:59,833 DEBUG main MultithreadEventLoopGroup:<clinit>:44 - -Dio.netty.eventLoopThreads: 16
+17:06:59,849 DEBUG main NioEventLoop:<clinit>:109 - -Dio.netty.noKeySetOptimization: false
+17:06:59,850 DEBUG main NioEventLoop:<clinit>:110 - -Dio.netty.selectorAutoRebuildThreshold: 512
+17:06:59,913 DEBUG main PooledByteBufAllocator:<clinit>:155 - -Dio.netty.allocator.numHeapArenas: 16
+17:06:59,914 DEBUG main PooledByteBufAllocator:<clinit>:156 - -Dio.netty.allocator.numDirectArenas: 16
+17:06:59,914 DEBUG main PooledByteBufAllocator:<clinit>:158 - -Dio.netty.allocator.pageSize: 8192
+17:06:59,914 DEBUG main PooledByteBufAllocator:<clinit>:163 - -Dio.netty.allocator.maxOrder: 9
+17:06:59,915 DEBUG main PooledByteBufAllocator:<clinit>:167 - -Dio.netty.allocator.chunkSize: 4194304
+17:06:59,915 DEBUG main PooledByteBufAllocator:<clinit>:168 - -Dio.netty.allocator.smallCacheSize: 256
+17:06:59,916 DEBUG main PooledByteBufAllocator:<clinit>:169 - -Dio.netty.allocator.normalCacheSize: 64
+17:06:59,916 DEBUG main PooledByteBufAllocator:<clinit>:170 - -Dio.netty.allocator.maxCachedBufferCapacity: 32768
+17:06:59,916 DEBUG main PooledByteBufAllocator:<clinit>:171 - -Dio.netty.allocator.cacheTrimInterval: 8192
+17:06:59,917 DEBUG main PooledByteBufAllocator:<clinit>:172 - -Dio.netty.allocator.cacheTrimIntervalMillis: 0
+17:06:59,917 DEBUG main PooledByteBufAllocator:<clinit>:173 - -Dio.netty.allocator.useCacheForAllThreads: false
+17:06:59,918 DEBUG main PooledByteBufAllocator:<clinit>:174 - -Dio.netty.allocator.maxCachedByteBuffersPerChunk: 1023
+17:06:59,935 DEBUG main ByteBufUtil:<clinit>:87 - -Dio.netty.allocator.type: pooled
+17:06:59,935 DEBUG main ByteBufUtil:<clinit>:96 - -Dio.netty.threadLocalDirectBufferSize: 0
+17:06:59,936 DEBUG main ByteBufUtil:<clinit>:99 - -Dio.netty.maxThreadLocalCharBufferSize: 16384
+17:07:00,869 DEBUG Forwarding newSession on session null to remote DefaultChannelId:<clinit>:79 - -Dio.netty.processId: 22128 (auto-detected)
+17:07:00,873 DEBUG Forwarding newSession on session null to remote NetUtil:<clinit>:136 - -Djava.net.preferIPv4Stack: false
+17:07:00,874 DEBUG Forwarding newSession on session null to remote NetUtil:<clinit>:137 - -Djava.net.preferIPv6Addresses: false
+17:07:00,889 DEBUG Forwarding newSession on session null to remote NetUtilInitializations:determineLoopback:129 - Loopback interface: lo (Software Loopback Interface 1, 127.0.0.1)
+17:07:00,891 DEBUG Forwarding newSession on session null to remote NetUtil:run:191 - Failed to get SOMAXCONN from sysctl and file \proc\sys\net\core\somaxconn. Default: 200
+17:07:00,919 DEBUG Forwarding newSession on session null to remote DefaultChannelId:<clinit>:101 - -Dio.netty.machineId: b0:5c:da:ff:fe:36:4d:f3 (auto-detected)
+17:07:00,988 DEBUG AsyncHttpClient-1-2 AbstractByteBuf:<clinit>:63 - -Dio.netty.buffer.checkAccessible: true
+17:07:00,988 DEBUG AsyncHttpClient-1-2 AbstractByteBuf:<clinit>:64 - -Dio.netty.buffer.checkBounds: true
+17:07:00,989 DEBUG AsyncHttpClient-1-2 ResourceLeakDetectorFactory:newResourceLeakDetector:196 - Loaded default ResourceLeakDetector: io.netty.util.ResourceLeakDetector@7739475c
+17:07:01,018 DEBUG AsyncHttpClient-1-2 Recycler:<clinit>:85 - -Dio.netty.recycler.maxCapacityPerThread: 4096
+17:07:01,019 DEBUG AsyncHttpClient-1-2 Recycler:<clinit>:86 - -Dio.netty.recycler.ratio: 8
+17:07:01,019 DEBUG AsyncHttpClient-1-2 Recycler:<clinit>:87 - -Dio.netty.recycler.chunkSize: 32
+17:07:01,019 DEBUG AsyncHttpClient-1-2 Recycler:<clinit>:88 - -Dio.netty.recycler.blocking: false
+17:07:01,917 DEBUG AsyncHttpClient-1-2 Brotli:<clinit>:38 - brotli4j not in the classpath; Brotli support will be unavailable.
+17:07:02,186 DEBUG main ThreadLocalRandom:newSeed:214 - -Dio.netty.initialSeedUniquifier: 0x3454617d3206ec31
+17:07:32,327  INFO main FakeBaseSteps:afterTest:22 - Killing WebDriver..
+17:07:33,120  INFO main FakeBaseSteps:beforeTest:16 - Initializing WebDriver..
+17:08:05,038  INFO main FakeBaseSteps:afterTest:22 - Killing WebDriver..
+16:09:03,837  INFO main FakeBaseSteps:beforeTest:18 - Initializing WebDriver..
+16:09:03,935  INFO main FakeBaseSteps:beforeTest:18 - Initializing WebDriver..
+16:09:04,440 DEBUG main InternalLoggerFactory:useLog4JLoggerFactory:89 - Using Log4J as the default logging framework
+16:09:04,472 DEBUG main ResourceLeakDetector:<clinit>:129 - -Dio.netty.leakDetection.level: simple
+16:09:04,473 DEBUG main ResourceLeakDetector:<clinit>:130 - -Dio.netty.leakDetection.targetRecords: 4
+16:09:04,486 DEBUG main InternalLoggerFactory:useLog4JLoggerFactory:89 - Using Log4J as the default logging framework
+16:09:04,490 DEBUG main ResourceLeakDetectorFactory:newResourceLeakDetector:196 - Loaded default ResourceLeakDetector: io.netty.util.ResourceLeakDetector@c7ba306
+16:09:04,496 DEBUG main ResourceLeakDetector:<clinit>:129 - -Dio.netty.leakDetection.level: simple
+16:09:04,499 DEBUG main ResourceLeakDetector:<clinit>:130 - -Dio.netty.leakDetection.targetRecords: 4
+16:09:04,517 DEBUG main ResourceLeakDetectorFactory:newResourceLeakDetector:196 - Loaded default ResourceLeakDetector: io.netty.util.ResourceLeakDetector@c7ba306
+16:09:04,556 DEBUG main PlatformDependent0:explicitNoUnsafeCause0:460 - -Dio.netty.noUnsafe: false
+16:09:04,557 DEBUG main PlatformDependent0:javaVersion0:954 - Java version: 14
+16:09:04,563 DEBUG main PlatformDependent0:<clinit>:135 - sun.misc.Unsafe.theUnsafe: available
+16:09:04,567 DEBUG main PlatformDependent0:<clinit>:159 - sun.misc.Unsafe.copyMemory: available
+16:09:04,570 DEBUG main PlatformDependent0:<clinit>:202 - java.nio.Buffer.address: available
+16:09:04,570 DEBUG main PlatformDependent0:explicitNoUnsafeCause0:460 - -Dio.netty.noUnsafe: false
+16:09:04,572 DEBUG main PlatformDependent0:javaVersion0:954 - Java version: 14
+16:09:04,573 DEBUG main PlatformDependent0:<clinit>:285 - direct buffer constructor: unavailable: Reflective setAccessible(true) disabled
+16:09:04,577 DEBUG main PlatformDependent0:<clinit>:350 - java.nio.Bits.unaligned: available, true
+16:09:04,578 DEBUG main PlatformDependent0:<clinit>:135 - sun.misc.Unsafe.theUnsafe: available
+16:09:04,581 DEBUG main PlatformDependent0:<clinit>:417 - jdk.internal.misc.Unsafe.allocateUninitializedArray(int): unavailable: class io.netty.util.internal.PlatformDependent0$6 cannot access class jdk.internal.misc.Unsafe (in module java.base) because module java.base does not export jdk.internal.misc to unnamed module @37374a5e
+16:09:04,584 DEBUG main PlatformDependent0:<clinit>:159 - sun.misc.Unsafe.copyMemory: available
+16:09:04,586 DEBUG main PlatformDependent0:<clinit>:446 - java.nio.DirectByteBuffer.<init>(long, int): unavailable
+16:09:04,588 DEBUG main PlatformDependent:unsafeUnavailabilityCause0:1116 - sun.misc.Unsafe: available
+16:09:04,588 DEBUG main PlatformDependent0:<clinit>:202 - java.nio.Buffer.address: available
+16:09:04,593 DEBUG main PlatformDependent0:<clinit>:285 - direct buffer constructor: unavailable: Reflective setAccessible(true) disabled
+16:09:04,595 DEBUG main PlatformDependent0:<clinit>:350 - java.nio.Bits.unaligned: available, true
+16:09:04,595 DEBUG main PlatformDependent:estimateMaxDirectMemory:1227 - maxDirectMemory: 4253024256 bytes (maybe)
+16:09:04,604 DEBUG main PlatformDependent:tmpdir0:1246 - -Dio.netty.tmpdir: C:\Users\KALENC~1\AppData\Local\Temp (java.io.tmpdir)
+16:09:04,605 DEBUG main PlatformDependent:bitMode0:1325 - -Dio.netty.bitMode: 64 (sun.arch.data.model)
+16:09:04,608 DEBUG main PlatformDependent0:<clinit>:417 - jdk.internal.misc.Unsafe.allocateUninitializedArray(int): unavailable: class io.netty.util.internal.PlatformDependent0$6 cannot access class jdk.internal.misc.Unsafe (in module java.base) because module java.base does not export jdk.internal.misc to unnamed module @37374a5e
+16:09:04,609 DEBUG main PlatformDependent:isWindows0:1076 - Platform: Windows
+16:09:04,614 DEBUG main PlatformDependent0:<clinit>:446 - java.nio.DirectByteBuffer.<init>(long, int): unavailable
+16:09:04,615 DEBUG main PlatformDependent:unsafeUnavailabilityCause0:1116 - sun.misc.Unsafe: available
+16:09:04,615 DEBUG main PlatformDependent:<clinit>:178 - -Dio.netty.maxDirectMemory: -1 bytes
+16:09:04,616 DEBUG main PlatformDependent:<clinit>:185 - -Dio.netty.uninitializedArrayAllocationThreshold: -1
+16:09:04,621 DEBUG main PlatformDependent:estimateMaxDirectMemory:1227 - maxDirectMemory: 4253024256 bytes (maybe)
+16:09:04,625 DEBUG main PlatformDependent:tmpdir0:1246 - -Dio.netty.tmpdir: C:\Users\KALENC~1\AppData\Local\Temp (java.io.tmpdir)
+16:09:04,627 DEBUG main PlatformDependent:bitMode0:1325 - -Dio.netty.bitMode: 64 (sun.arch.data.model)
+16:09:04,629 DEBUG main PlatformDependent:isWindows0:1076 - Platform: Windows
+16:09:04,633 DEBUG main PlatformDependent:<clinit>:178 - -Dio.netty.maxDirectMemory: -1 bytes
+16:09:04,634 DEBUG main PlatformDependent:<clinit>:185 - -Dio.netty.uninitializedArrayAllocationThreshold: -1
+16:09:04,643 DEBUG main CleanerJava9:<clinit>:71 - java.nio.ByteBuffer.cleaner(): available
+16:09:04,644 DEBUG main PlatformDependent:<clinit>:205 - -Dio.netty.noPreferDirect: false
+16:09:04,659 DEBUG main CleanerJava9:<clinit>:71 - java.nio.ByteBuffer.cleaner(): available
+16:09:04,661 DEBUG main PlatformDependent:<clinit>:205 - -Dio.netty.noPreferDirect: false
+16:09:04,691 DEBUG main PlatformDependent:<clinit>:967 - org.jctools-core.MpscChunkedArrayQueue: available
+16:09:04,699 DEBUG main PlatformDependent:<clinit>:967 - org.jctools-core.MpscChunkedArrayQueue: available
+16:09:04,779 DEBUG main InternalThreadLocalMap:<clinit>:86 - -Dio.netty.threadLocalMap.stringBuilder.initialSize: 1024
+16:09:04,780 DEBUG main InternalThreadLocalMap:<clinit>:89 - -Dio.netty.threadLocalMap.stringBuilder.maxSize: 4096
+16:09:04,779 DEBUG main InternalThreadLocalMap:<clinit>:86 - -Dio.netty.threadLocalMap.stringBuilder.initialSize: 1024
+16:09:04,784 DEBUG main InternalThreadLocalMap:<clinit>:89 - -Dio.netty.threadLocalMap.stringBuilder.maxSize: 4096
+16:09:05,408 DEBUG main JdkSslContext:<clinit>:97 - Default protocols (JDK): [TLSv1.3, TLSv1.2, TLSv1.1, TLSv1] 
+16:09:05,409 DEBUG main JdkSslContext:<clinit>:98 - Default cipher suites (JDK): [TLS_ECDHE_ECDSA_WITH_AES_256_GCM_SHA384, TLS_ECDHE_ECDSA_WITH_AES_128_GCM_SHA256, TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256, TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384, TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA, TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA, TLS_RSA_WITH_AES_128_GCM_SHA256, TLS_RSA_WITH_AES_128_CBC_SHA, TLS_RSA_WITH_AES_256_CBC_SHA, TLS_AES_128_GCM_SHA256, TLS_AES_256_GCM_SHA384]
+16:09:05,408 DEBUG main JdkSslContext:<clinit>:97 - Default protocols (JDK): [TLSv1.3, TLSv1.2, TLSv1.1, TLSv1] 
+16:09:05,409 DEBUG main JdkSslContext:<clinit>:98 - Default cipher suites (JDK): [TLS_ECDHE_ECDSA_WITH_AES_256_GCM_SHA384, TLS_ECDHE_ECDSA_WITH_AES_128_GCM_SHA256, TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256, TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384, TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA, TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA, TLS_RSA_WITH_AES_128_GCM_SHA256, TLS_RSA_WITH_AES_128_CBC_SHA, TLS_RSA_WITH_AES_256_CBC_SHA, TLS_AES_128_GCM_SHA256, TLS_AES_256_GCM_SHA384]
+16:09:05,510 DEBUG main MultithreadEventLoopGroup:<clinit>:44 - -Dio.netty.eventLoopThreads: 16
+16:09:05,539 DEBUG main MultithreadEventLoopGroup:<clinit>:44 - -Dio.netty.eventLoopThreads: 16
+16:09:05,550 DEBUG main NioEventLoop:<clinit>:109 - -Dio.netty.noKeySetOptimization: false
+16:09:05,551 DEBUG main NioEventLoop:<clinit>:110 - -Dio.netty.selectorAutoRebuildThreshold: 512
+16:09:05,577 DEBUG main NioEventLoop:<clinit>:109 - -Dio.netty.noKeySetOptimization: false
+16:09:05,578 DEBUG main NioEventLoop:<clinit>:110 - -Dio.netty.selectorAutoRebuildThreshold: 512
+16:09:05,725 DEBUG main PooledByteBufAllocator:<clinit>:155 - -Dio.netty.allocator.numHeapArenas: 16
+16:09:05,726 DEBUG main PooledByteBufAllocator:<clinit>:156 - -Dio.netty.allocator.numDirectArenas: 16
+16:09:05,726 DEBUG main PooledByteBufAllocator:<clinit>:158 - -Dio.netty.allocator.pageSize: 8192
+16:09:05,727 DEBUG main PooledByteBufAllocator:<clinit>:163 - -Dio.netty.allocator.maxOrder: 9
+16:09:05,727 DEBUG main PooledByteBufAllocator:<clinit>:167 - -Dio.netty.allocator.chunkSize: 4194304
+16:09:05,728 DEBUG main PooledByteBufAllocator:<clinit>:168 - -Dio.netty.allocator.smallCacheSize: 256
+16:09:05,728 DEBUG main PooledByteBufAllocator:<clinit>:169 - -Dio.netty.allocator.normalCacheSize: 64
+16:09:05,730 DEBUG main PooledByteBufAllocator:<clinit>:170 - -Dio.netty.allocator.maxCachedBufferCapacity: 32768
+16:09:05,732 DEBUG main PooledByteBufAllocator:<clinit>:171 - -Dio.netty.allocator.cacheTrimInterval: 8192
+16:09:05,733 DEBUG main PooledByteBufAllocator:<clinit>:172 - -Dio.netty.allocator.cacheTrimIntervalMillis: 0
+16:09:05,734 DEBUG main PooledByteBufAllocator:<clinit>:173 - -Dio.netty.allocator.useCacheForAllThreads: false
+16:09:05,735 DEBUG main PooledByteBufAllocator:<clinit>:174 - -Dio.netty.allocator.maxCachedByteBuffersPerChunk: 1023
+16:09:05,745 DEBUG main PooledByteBufAllocator:<clinit>:155 - -Dio.netty.allocator.numHeapArenas: 16
+16:09:05,746 DEBUG main PooledByteBufAllocator:<clinit>:156 - -Dio.netty.allocator.numDirectArenas: 16
+16:09:05,747 DEBUG main PooledByteBufAllocator:<clinit>:158 - -Dio.netty.allocator.pageSize: 8192
+16:09:05,748 DEBUG main PooledByteBufAllocator:<clinit>:163 - -Dio.netty.allocator.maxOrder: 9
+16:09:05,750 DEBUG main PooledByteBufAllocator:<clinit>:167 - -Dio.netty.allocator.chunkSize: 4194304
+16:09:05,752 DEBUG main PooledByteBufAllocator:<clinit>:168 - -Dio.netty.allocator.smallCacheSize: 256
+16:09:05,755 DEBUG main PooledByteBufAllocator:<clinit>:169 - -Dio.netty.allocator.normalCacheSize: 64
+16:09:05,756 DEBUG main PooledByteBufAllocator:<clinit>:170 - -Dio.netty.allocator.maxCachedBufferCapacity: 32768
+16:09:05,758 DEBUG main PooledByteBufAllocator:<clinit>:171 - -Dio.netty.allocator.cacheTrimInterval: 8192
+16:09:05,759 DEBUG main PooledByteBufAllocator:<clinit>:172 - -Dio.netty.allocator.cacheTrimIntervalMillis: 0
+16:09:05,760 DEBUG main PooledByteBufAllocator:<clinit>:173 - -Dio.netty.allocator.useCacheForAllThreads: false
+16:09:05,760 DEBUG main PooledByteBufAllocator:<clinit>:174 - -Dio.netty.allocator.maxCachedByteBuffersPerChunk: 1023
+16:09:05,794 DEBUG main ByteBufUtil:<clinit>:87 - -Dio.netty.allocator.type: pooled
+16:09:05,796 DEBUG main ByteBufUtil:<clinit>:96 - -Dio.netty.threadLocalDirectBufferSize: 0
+16:09:05,806 DEBUG main ByteBufUtil:<clinit>:99 - -Dio.netty.maxThreadLocalCharBufferSize: 16384
+16:09:05,866 DEBUG main ByteBufUtil:<clinit>:87 - -Dio.netty.allocator.type: pooled
+16:09:05,867 DEBUG main ByteBufUtil:<clinit>:96 - -Dio.netty.threadLocalDirectBufferSize: 0
+16:09:05,868 DEBUG main ByteBufUtil:<clinit>:99 - -Dio.netty.maxThreadLocalCharBufferSize: 16384
+16:09:07,308 DEBUG Forwarding newSession on session null to remote DefaultChannelId:<clinit>:79 - -Dio.netty.processId: 101004 (auto-detected)
+16:09:07,308 DEBUG Forwarding newSession on session null to remote DefaultChannelId:<clinit>:79 - -Dio.netty.processId: 152852 (auto-detected)
+16:09:07,314 DEBUG Forwarding newSession on session null to remote NetUtil:<clinit>:136 - -Djava.net.preferIPv4Stack: false
+16:09:07,314 DEBUG Forwarding newSession on session null to remote NetUtil:<clinit>:136 - -Djava.net.preferIPv4Stack: false
+16:09:07,315 DEBUG Forwarding newSession on session null to remote NetUtil:<clinit>:137 - -Djava.net.preferIPv6Addresses: false
+16:09:07,316 DEBUG Forwarding newSession on session null to remote NetUtil:<clinit>:137 - -Djava.net.preferIPv6Addresses: false
+16:09:07,335 DEBUG Forwarding newSession on session null to remote NetUtilInitializations:determineLoopback:129 - Loopback interface: lo (Software Loopback Interface 1, 127.0.0.1)
+16:09:07,336 DEBUG Forwarding newSession on session null to remote NetUtilInitializations:determineLoopback:129 - Loopback interface: lo (Software Loopback Interface 1, 127.0.0.1)
+16:09:07,337 DEBUG Forwarding newSession on session null to remote NetUtil:run:191 - Failed to get SOMAXCONN from sysctl and file \proc\sys\net\core\somaxconn. Default: 200
+16:09:07,338 DEBUG Forwarding newSession on session null to remote NetUtil:run:191 - Failed to get SOMAXCONN from sysctl and file \proc\sys\net\core\somaxconn. Default: 200
+16:09:07,374 DEBUG Forwarding newSession on session null to remote DefaultChannelId:<clinit>:101 - -Dio.netty.machineId: cc:f9:e4:ff:fe:d6:6f:f0 (auto-detected)
+16:09:07,377 DEBUG Forwarding newSession on session null to remote DefaultChannelId:<clinit>:101 - -Dio.netty.machineId: cc:f9:e4:ff:fe:d6:6f:f0 (auto-detected)
+16:09:07,544 DEBUG AsyncHttpClient-1-2 AbstractByteBuf:<clinit>:63 - -Dio.netty.buffer.checkAccessible: true
+16:09:07,546 DEBUG AsyncHttpClient-1-2 AbstractByteBuf:<clinit>:64 - -Dio.netty.buffer.checkBounds: true
+16:09:07,544 DEBUG AsyncHttpClient-1-2 AbstractByteBuf:<clinit>:63 - -Dio.netty.buffer.checkAccessible: true
+16:09:07,547 DEBUG AsyncHttpClient-1-2 AbstractByteBuf:<clinit>:64 - -Dio.netty.buffer.checkBounds: true
+16:09:07,547 DEBUG AsyncHttpClient-1-2 ResourceLeakDetectorFactory:newResourceLeakDetector:196 - Loaded default ResourceLeakDetector: io.netty.util.ResourceLeakDetector@a956e2e
+16:09:07,548 DEBUG AsyncHttpClient-1-2 ResourceLeakDetectorFactory:newResourceLeakDetector:196 - Loaded default ResourceLeakDetector: io.netty.util.ResourceLeakDetector@29088bdb
+16:09:07,626 DEBUG AsyncHttpClient-1-2 Recycler:<clinit>:85 - -Dio.netty.recycler.maxCapacityPerThread: 4096
+16:09:07,627 DEBUG AsyncHttpClient-1-2 Recycler:<clinit>:86 - -Dio.netty.recycler.ratio: 8
+16:09:07,627 DEBUG AsyncHttpClient-1-2 Recycler:<clinit>:87 - -Dio.netty.recycler.chunkSize: 32
+16:09:07,628 DEBUG AsyncHttpClient-1-2 Recycler:<clinit>:88 - -Dio.netty.recycler.blocking: false
+16:09:07,628 DEBUG AsyncHttpClient-1-2 Recycler:<clinit>:85 - -Dio.netty.recycler.maxCapacityPerThread: 4096
+16:09:07,629 DEBUG AsyncHttpClient-1-2 Recycler:<clinit>:86 - -Dio.netty.recycler.ratio: 8
+16:09:07,632 DEBUG AsyncHttpClient-1-2 Recycler:<clinit>:87 - -Dio.netty.recycler.chunkSize: 32
+16:09:07,633 DEBUG AsyncHttpClient-1-2 Recycler:<clinit>:88 - -Dio.netty.recycler.blocking: false
+16:09:10,005 DEBUG AsyncHttpClient-1-2 Brotli:<clinit>:38 - brotli4j not in the classpath; Brotli support will be unavailable.
+16:09:10,163 DEBUG AsyncHttpClient-1-2 Brotli:<clinit>:38 - brotli4j not in the classpath; Brotli support will be unavailable.
+16:09:11,608 DEBUG main ThreadLocalRandom:newSeed:214 - -Dio.netty.initialSeedUniquifier: 0xbb03b106e953af53
+16:09:11,632 DEBUG main ThreadLocalRandom:newSeed:214 - -Dio.netty.initialSeedUniquifier: 0xba23468cf110b6c0
+16:09:11,854  INFO main L4JLogging:checkHeaderTest:20 - I start
+16:09:11,868  INFO main L4JLogging:checkHeaderTest:20 - I start
+16:09:20,778  INFO main FakeBaseSteps:afterTest:24 - Killing WebDriver..
+16:09:20,993  INFO main FakeBaseSteps:afterTest:24 - Killing WebDriver..
+14:20:29,258 DEBUG main BasicClientConnectionManager:getConnection:161 - Get connection for route {}->http://178.124.206.46:8001
+14:20:29,277 DEBUG main DefaultClientConnectionOperator:openConnection:177 - Connecting to 178.124.206.46:8001
+14:20:29,314 DEBUG main RequestAddCookies:process:123 - CookieSpec selected: ignoreCookies
+14:20:29,317 DEBUG main RequestAuthCache:process:77 - Auth cache not set in the context
+14:20:29,317 DEBUG main RequestTargetAuthentication:process:80 - Target auth state: UNCHALLENGED
+14:20:29,318 DEBUG main RequestProxyAuthentication:process:89 - Proxy auth state: UNCHALLENGED
+14:20:29,319 DEBUG main DefaultHttpClient:tryExecute:677 - Attempt 1 to execute request
+14:20:29,319 DEBUG main DefaultClientConnection:sendRequestHeader:274 - Sending request: POST /app/ws/ HTTP/1.1
+14:20:29,320 DEBUG main wire:wire:73 -  >> "POST /app/ws/ HTTP/1.1[\r][\n]"
+14:20:29,322 DEBUG main wire:wire:73 -  >> "Accept: application/json, application/javascript, text/javascript, text/json[\r][\n]"
+14:20:29,323 DEBUG main wire:wire:73 -  >> "Content-Type: application/json[\r][\n]"
+14:20:29,324 DEBUG main wire:wire:73 -  >> "Content-Length: 26[\r][\n]"
+14:20:29,324 DEBUG main wire:wire:73 -  >> "Host: 178.124.206.46:8001[\r][\n]"
+14:20:29,325 DEBUG main wire:wire:73 -  >> "Connection: Keep-Alive[\r][\n]"
+14:20:29,325 DEBUG main wire:wire:73 -  >> "User-Agent: Apache-HttpClient/4.5.13 (Java/14.0.2)[\r][\n]"
+14:20:29,325 DEBUG main wire:wire:73 -  >> "Accept-Encoding: gzip,deflate[\r][\n]"
+14:20:29,326 DEBUG main wire:wire:73 -  >> "[\r][\n]"
+14:20:29,327 DEBUG main headers:sendRequestHeader:278 - >> POST /app/ws/ HTTP/1.1
+14:20:29,327 DEBUG main headers:sendRequestHeader:281 - >> Accept: application/json, application/javascript, text/javascript, text/json
+14:20:29,328 DEBUG main headers:sendRequestHeader:281 - >> Content-Type: application/json
+14:20:29,328 DEBUG main headers:sendRequestHeader:281 - >> Content-Length: 26
+14:20:29,328 DEBUG main headers:sendRequestHeader:281 - >> Host: 178.124.206.46:8001
+14:20:29,331 DEBUG main headers:sendRequestHeader:281 - >> Connection: Keep-Alive
+14:20:29,331 DEBUG main headers:sendRequestHeader:281 - >> User-Agent: Apache-HttpClient/4.5.13 (Java/14.0.2)
+14:20:29,331 DEBUG main headers:sendRequestHeader:281 - >> Accept-Encoding: gzip,deflate
+14:20:29,332 DEBUG main wire:wire:87 -  >> "{"user":"a","strict":true}"
+14:20:29,388 DEBUG main wire:wire:73 -  << "HTTP/1.1 200 OK[\r][\n]"
+14:20:29,393 DEBUG main wire:wire:73 -  << "Date: Sat, 28 May 2022 11:20:29 GMT[\r][\n]"
+14:20:29,393 DEBUG main wire:wire:73 -  << "Server: Apache/2.4.38 (Debian)[\r][\n]"
+14:20:29,394 DEBUG main wire:wire:73 -  << "X-Powered-By: PHP/7.4.1[\r][\n]"
+14:20:29,394 DEBUG main wire:wire:73 -  << "Content-Length: 224[\r][\n]"
+14:20:29,394 DEBUG main wire:wire:73 -  << "Keep-Alive: timeout=5, max=100[\r][\n]"
+14:20:29,395 DEBUG main wire:wire:73 -  << "Connection: Keep-Alive[\r][\n]"
+14:20:29,395 DEBUG main wire:wire:73 -  << "Content-Type: application/json; charset=utf-8[\r][\n]"
+14:20:29,395 DEBUG main wire:wire:73 -  << "[\r][\n]"
+14:20:29,397 DEBUG main DefaultClientConnection:receiveResponseHeader:259 - Receiving response: HTTP/1.1 200 OK
+14:20:29,397 DEBUG main headers:receiveResponseHeader:262 - << HTTP/1.1 200 OK
+14:20:29,397 DEBUG main headers:receiveResponseHeader:265 - << Date: Sat, 28 May 2022 11:20:29 GMT
+14:20:29,397 DEBUG main headers:receiveResponseHeader:265 - << Server: Apache/2.4.38 (Debian)
+14:20:29,398 DEBUG main headers:receiveResponseHeader:265 - << X-Powered-By: PHP/7.4.1
+14:20:29,398 DEBUG main headers:receiveResponseHeader:265 - << Content-Length: 224
+14:20:29,398 DEBUG main headers:receiveResponseHeader:265 - << Keep-Alive: timeout=5, max=100
+14:20:29,398 DEBUG main headers:receiveResponseHeader:265 - << Connection: Keep-Alive
+14:20:29,399 DEBUG main headers:receiveResponseHeader:265 - << Content-Type: application/json; charset=utf-8
+14:20:29,405 DEBUG main DefaultHttpClient:execute:504 - Connection can be kept alive for 5000 MILLISECONDS
+14:20:29,437 DEBUG main RequestSpecificationImpl$RestAssuredHttpBuilder:parseResponse:545 - Parsing response as: application/json; charset=utf-8
+14:20:29,437 DEBUG main RequestSpecificationImpl$RestAssuredHttpBuilder:parseResponse:548 - Parsed data to instance of: class org.apache.http.conn.EofSensorInputStream
+14:20:29,504 DEBUG main wire:wire:73 -  << "{[\n]"
+14:20:29,505 DEBUG main wire:wire:73 -  << "    "code": "0",[\n]"
+14:20:29,505 DEBUG main wire:wire:73 -  << "    "data": [[\n]"
+14:20:29,506 DEBUG main wire:wire:73 -  << "        {[\n]"
+14:20:29,506 DEBUG main wire:wire:73 -  << "            "id": "1",[\n]"
+14:20:29,507 DEBUG main wire:wire:73 -  << "            "username": "a",[\n]"
+14:20:29,507 DEBUG main wire:wire:73 -  << "            "realname": "Alberto Boo",[\n]"
+14:20:29,507 DEBUG main wire:wire:73 -  << "            "password": "b",[\n]"
+14:20:29,508 DEBUG main wire:wire:73 -  << "            "email": "alberto.boo@mail.com"[\n]"
+14:20:29,508 DEBUG main wire:wire:73 -  << "        }[\n]"
+14:20:29,508 DEBUG main wire:wire:73 -  << "    ][\n]"
+14:20:29,508 DEBUG main wire:wire:87 -  << "}"
+14:20:29,510 DEBUG main BasicClientConnectionManager:releaseConnection:200 - Releasing connection org.apache.http.impl.conn.ManagedClientConnectionImpl@6d171ce0
+14:20:29,511 DEBUG main BasicClientConnectionManager:releaseConnection:225 - Connection can be kept alive for 5000 MILLISECONDS
+14:21:03,084 DEBUG main BasicClientConnectionManager:getConnection:161 - Get connection for route {}->http://178.124.206.46:8001
+14:21:03,101 DEBUG main DefaultClientConnectionOperator:openConnection:177 - Connecting to 178.124.206.46:8001
+14:21:03,140 DEBUG main RequestAddCookies:process:123 - CookieSpec selected: ignoreCookies
+14:21:03,144 DEBUG main RequestAuthCache:process:77 - Auth cache not set in the context
+14:21:03,145 DEBUG main RequestTargetAuthentication:process:80 - Target auth state: UNCHALLENGED
+14:21:03,147 DEBUG main RequestProxyAuthentication:process:89 - Proxy auth state: UNCHALLENGED
+14:21:03,150 DEBUG main DefaultHttpClient:tryExecute:677 - Attempt 1 to execute request
+14:21:03,151 DEBUG main DefaultClientConnection:sendRequestHeader:274 - Sending request: POST /app/ws/ HTTP/1.1
+14:21:03,152 DEBUG main wire:wire:73 -  >> "POST /app/ws/ HTTP/1.1[\r][\n]"
+14:21:03,155 DEBUG main wire:wire:73 -  >> "Accept: application/json, application/javascript, text/javascript, text/json[\r][\n]"
+14:21:03,155 DEBUG main wire:wire:73 -  >> "Content-Type: application/json[\r][\n]"
+14:21:03,156 DEBUG main wire:wire:73 -  >> "Content-Length: 26[\r][\n]"
+14:21:03,156 DEBUG main wire:wire:73 -  >> "Host: 178.124.206.46:8001[\r][\n]"
+14:21:03,157 DEBUG main wire:wire:73 -  >> "Connection: Keep-Alive[\r][\n]"
+14:21:03,157 DEBUG main wire:wire:73 -  >> "User-Agent: Apache-HttpClient/4.5.13 (Java/14.0.2)[\r][\n]"
+14:21:03,158 DEBUG main wire:wire:73 -  >> "Accept-Encoding: gzip,deflate[\r][\n]"
+14:21:03,159 DEBUG main wire:wire:73 -  >> "[\r][\n]"
+14:21:03,160 DEBUG main headers:sendRequestHeader:278 - >> POST /app/ws/ HTTP/1.1
+14:21:03,160 DEBUG main headers:sendRequestHeader:281 - >> Accept: application/json, application/javascript, text/javascript, text/json
+14:21:03,160 DEBUG main headers:sendRequestHeader:281 - >> Content-Type: application/json
+14:21:03,161 DEBUG main headers:sendRequestHeader:281 - >> Content-Length: 26
+14:21:03,161 DEBUG main headers:sendRequestHeader:281 - >> Host: 178.124.206.46:8001
+14:21:03,161 DEBUG main headers:sendRequestHeader:281 - >> Connection: Keep-Alive
+14:21:03,161 DEBUG main headers:sendRequestHeader:281 - >> User-Agent: Apache-HttpClient/4.5.13 (Java/14.0.2)
+14:21:03,162 DEBUG main headers:sendRequestHeader:281 - >> Accept-Encoding: gzip,deflate
+14:21:03,162 DEBUG main wire:wire:87 -  >> "{"user":"a","strict":true}"
+14:21:03,174 DEBUG main wire:wire:73 -  << "HTTP/1.1 200 OK[\r][\n]"
+14:21:03,176 DEBUG main wire:wire:73 -  << "Date: Sat, 28 May 2022 11:21:03 GMT[\r][\n]"
+14:21:03,177 DEBUG main wire:wire:73 -  << "Server: Apache/2.4.38 (Debian)[\r][\n]"
+14:21:03,178 DEBUG main wire:wire:73 -  << "X-Powered-By: PHP/7.4.1[\r][\n]"
+14:21:03,178 DEBUG main wire:wire:73 -  << "Content-Length: 224[\r][\n]"
+14:21:03,179 DEBUG main wire:wire:73 -  << "Keep-Alive: timeout=5, max=100[\r][\n]"
+14:21:03,179 DEBUG main wire:wire:73 -  << "Connection: Keep-Alive[\r][\n]"
+14:21:03,180 DEBUG main wire:wire:73 -  << "Content-Type: application/json; charset=utf-8[\r][\n]"
+14:21:03,180 DEBUG main wire:wire:73 -  << "[\r][\n]"
+14:21:03,182 DEBUG main DefaultClientConnection:receiveResponseHeader:259 - Receiving response: HTTP/1.1 200 OK
+14:21:03,183 DEBUG main headers:receiveResponseHeader:262 - << HTTP/1.1 200 OK
+14:21:03,183 DEBUG main headers:receiveResponseHeader:265 - << Date: Sat, 28 May 2022 11:21:03 GMT
+14:21:03,184 DEBUG main headers:receiveResponseHeader:265 - << Server: Apache/2.4.38 (Debian)
+14:21:03,184 DEBUG main headers:receiveResponseHeader:265 - << X-Powered-By: PHP/7.4.1
+14:21:03,185 DEBUG main headers:receiveResponseHeader:265 - << Content-Length: 224
+14:21:03,185 DEBUG main headers:receiveResponseHeader:265 - << Keep-Alive: timeout=5, max=100
+14:21:03,186 DEBUG main headers:receiveResponseHeader:265 - << Connection: Keep-Alive
+14:21:03,186 DEBUG main headers:receiveResponseHeader:265 - << Content-Type: application/json; charset=utf-8
+14:21:03,194 DEBUG main DefaultHttpClient:execute:504 - Connection can be kept alive for 5000 MILLISECONDS
+14:21:03,228 DEBUG main RequestSpecificationImpl$RestAssuredHttpBuilder:parseResponse:545 - Parsing response as: application/json; charset=utf-8
+14:21:03,229 DEBUG main RequestSpecificationImpl$RestAssuredHttpBuilder:parseResponse:548 - Parsed data to instance of: class org.apache.http.conn.EofSensorInputStream
+14:21:03,294 DEBUG main wire:wire:73 -  << "{[\n]"
+14:21:03,295 DEBUG main wire:wire:73 -  << "    "code": "0",[\n]"
+14:21:03,295 DEBUG main wire:wire:73 -  << "    "data": [[\n]"
+14:21:03,295 DEBUG main wire:wire:73 -  << "        {[\n]"
+14:21:03,295 DEBUG main wire:wire:73 -  << "            "id": "1",[\n]"
+14:21:03,295 DEBUG main wire:wire:73 -  << "            "username": "a",[\n]"
+14:21:03,296 DEBUG main wire:wire:73 -  << "            "realname": "Alberto Boo",[\n]"
+14:21:03,296 DEBUG main wire:wire:73 -  << "            "password": "b",[\n]"
+14:21:03,296 DEBUG main wire:wire:73 -  << "            "email": "alberto.boo@mail.com"[\n]"
+14:21:03,296 DEBUG main wire:wire:73 -  << "        }[\n]"
+14:21:03,296 DEBUG main wire:wire:73 -  << "    ][\n]"
+14:21:03,296 DEBUG main wire:wire:87 -  << "}"
+14:21:03,297 DEBUG main BasicClientConnectionManager:releaseConnection:200 - Releasing connection org.apache.http.impl.conn.ManagedClientConnectionImpl@7ec25216
+14:21:03,298 DEBUG main BasicClientConnectionManager:releaseConnection:225 - Connection can be kept alive for 5000 MILLISECONDS
+14:25:01,681 DEBUG main BasicClientConnectionManager:getConnection:161 - Get connection for route {}->http://178.124.206.46:8001
+14:25:01,698 DEBUG main DefaultClientConnectionOperator:openConnection:177 - Connecting to 178.124.206.46:8001
+14:25:01,739 DEBUG main RequestAddCookies:process:123 - CookieSpec selected: ignoreCookies
+14:25:01,743 DEBUG main RequestAuthCache:process:77 - Auth cache not set in the context
+14:25:01,744 DEBUG main RequestTargetAuthentication:process:80 - Target auth state: UNCHALLENGED
+14:25:01,746 DEBUG main RequestProxyAuthentication:process:89 - Proxy auth state: UNCHALLENGED
+14:25:01,747 DEBUG main DefaultHttpClient:tryExecute:677 - Attempt 1 to execute request
+14:25:01,748 DEBUG main DefaultClientConnection:sendRequestHeader:274 - Sending request: POST /app/ws/ HTTP/1.1
+14:25:01,750 DEBUG main wire:wire:73 -  >> "POST /app/ws/ HTTP/1.1[\r][\n]"
+14:25:01,752 DEBUG main wire:wire:73 -  >> "Accept: application/json, application/javascript, text/javascript, text/json[\r][\n]"
+14:25:01,753 DEBUG main wire:wire:73 -  >> "Content-Type: application/json[\r][\n]"
+14:25:01,753 DEBUG main wire:wire:73 -  >> "Content-Length: 26[\r][\n]"
+14:25:01,754 DEBUG main wire:wire:73 -  >> "Host: 178.124.206.46:8001[\r][\n]"
+14:25:01,754 DEBUG main wire:wire:73 -  >> "Connection: Keep-Alive[\r][\n]"
+14:25:01,755 DEBUG main wire:wire:73 -  >> "User-Agent: Apache-HttpClient/4.5.13 (Java/14.0.2)[\r][\n]"
+14:25:01,755 DEBUG main wire:wire:73 -  >> "Accept-Encoding: gzip,deflate[\r][\n]"
+14:25:01,756 DEBUG main wire:wire:73 -  >> "[\r][\n]"
+14:25:01,757 DEBUG main headers:sendRequestHeader:278 - >> POST /app/ws/ HTTP/1.1
+14:25:01,757 DEBUG main headers:sendRequestHeader:281 - >> Accept: application/json, application/javascript, text/javascript, text/json
+14:25:01,757 DEBUG main headers:sendRequestHeader:281 - >> Content-Type: application/json
+14:25:01,758 DEBUG main headers:sendRequestHeader:281 - >> Content-Length: 26
+14:25:01,758 DEBUG main headers:sendRequestHeader:281 - >> Host: 178.124.206.46:8001
+14:25:01,758 DEBUG main headers:sendRequestHeader:281 - >> Connection: Keep-Alive
+14:25:01,758 DEBUG main headers:sendRequestHeader:281 - >> User-Agent: Apache-HttpClient/4.5.13 (Java/14.0.2)
+14:25:01,759 DEBUG main headers:sendRequestHeader:281 - >> Accept-Encoding: gzip,deflate
+14:25:01,760 DEBUG main wire:wire:87 -  >> "{"user":"a","strict":true}"
+14:25:01,774 DEBUG main wire:wire:73 -  << "HTTP/1.1 206 You just brought me alive![\r][\n]"
+14:25:01,776 DEBUG main wire:wire:73 -  << "Date: Sat, 28 May 2022 11:25:01 GMT[\r][\n]"
+14:25:01,777 DEBUG main wire:wire:73 -  << "Server: Apache/2.4.38 (Debian)[\r][\n]"
+14:25:01,777 DEBUG main wire:wire:73 -  << "X-Powered-By: PHP/7.4.1[\r][\n]"
+14:25:01,777 DEBUG main wire:wire:73 -  << "Content-Length: 26[\r][\n]"
+14:25:01,778 DEBUG main wire:wire:73 -  << "Keep-Alive: timeout=5, max=100[\r][\n]"
+14:25:01,778 DEBUG main wire:wire:73 -  << "Connection: Keep-Alive[\r][\n]"
+14:25:01,778 DEBUG main wire:wire:73 -  << "Content-Type: text/html; charset=UTF-8[\r][\n]"
+14:25:01,779 DEBUG main wire:wire:73 -  << "[\r][\n]"
+14:25:01,781 DEBUG main DefaultClientConnection:receiveResponseHeader:259 - Receiving response: HTTP/1.1 206 You just brought me alive!
+14:25:01,782 DEBUG main headers:receiveResponseHeader:262 - << HTTP/1.1 206 You just brought me alive!
+14:25:01,782 DEBUG main headers:receiveResponseHeader:265 - << Date: Sat, 28 May 2022 11:25:01 GMT
+14:25:01,783 DEBUG main headers:receiveResponseHeader:265 - << Server: Apache/2.4.38 (Debian)
+14:25:01,783 DEBUG main headers:receiveResponseHeader:265 - << X-Powered-By: PHP/7.4.1
+14:25:01,784 DEBUG main headers:receiveResponseHeader:265 - << Content-Length: 26
+14:25:01,784 DEBUG main headers:receiveResponseHeader:265 - << Keep-Alive: timeout=5, max=100
+14:25:01,785 DEBUG main headers:receiveResponseHeader:265 - << Connection: Keep-Alive
+14:25:01,785 DEBUG main headers:receiveResponseHeader:265 - << Content-Type: text/html; charset=UTF-8
+14:25:01,799 DEBUG main DefaultHttpClient:execute:504 - Connection can be kept alive for 5000 MILLISECONDS
+14:25:01,835 DEBUG main RequestSpecificationImpl$RestAssuredHttpBuilder:parseResponse:545 - Parsing response as: text/html; charset=UTF-8
+14:25:01,835 DEBUG main RequestSpecificationImpl$RestAssuredHttpBuilder:parseResponse:548 - Parsed data to instance of: class org.apache.http.conn.EofSensorInputStream
+14:25:01,908 DEBUG main wire:wire:87 -  << "You just brought me alive!"
+14:25:01,910 DEBUG main BasicClientConnectionManager:releaseConnection:200 - Releasing connection org.apache.http.impl.conn.ManagedClientConnectionImpl@232cce0
+14:25:01,911 DEBUG main BasicClientConnectionManager:releaseConnection:225 - Connection can be kept alive for 5000 MILLISECONDS
+14:27:29,065 DEBUG main BasicClientConnectionManager:getConnection:161 - Get connection for route {}->http://178.124.206.46:8001
+14:27:29,088 DEBUG main DefaultClientConnectionOperator:openConnection:177 - Connecting to 178.124.206.46:8001
+14:27:29,127 DEBUG main RequestAddCookies:process:123 - CookieSpec selected: ignoreCookies
+14:27:29,131 DEBUG main RequestAuthCache:process:77 - Auth cache not set in the context
+14:27:29,132 DEBUG main RequestTargetAuthentication:process:80 - Target auth state: UNCHALLENGED
+14:27:29,136 DEBUG main RequestProxyAuthentication:process:89 - Proxy auth state: UNCHALLENGED
+14:27:29,137 DEBUG main DefaultHttpClient:tryExecute:677 - Attempt 1 to execute request
+14:27:29,137 DEBUG main DefaultClientConnection:sendRequestHeader:274 - Sending request: POST /app/ws/ HTTP/1.1
+14:27:29,138 DEBUG main wire:wire:73 -  >> "POST /app/ws/ HTTP/1.1[\r][\n]"
+14:27:29,141 DEBUG main wire:wire:73 -  >> "Accept: application/json, application/javascript, text/javascript, text/json[\r][\n]"
+14:27:29,142 DEBUG main wire:wire:73 -  >> "Content-Type: application/json[\r][\n]"
+14:27:29,143 DEBUG main wire:wire:73 -  >> "Content-Length: 26[\r][\n]"
+14:27:29,144 DEBUG main wire:wire:73 -  >> "Host: 178.124.206.46:8001[\r][\n]"
+14:27:29,144 DEBUG main wire:wire:73 -  >> "Connection: Keep-Alive[\r][\n]"
+14:27:29,145 DEBUG main wire:wire:73 -  >> "User-Agent: Apache-HttpClient/4.5.13 (Java/14.0.2)[\r][\n]"
+14:27:29,145 DEBUG main wire:wire:73 -  >> "Accept-Encoding: gzip,deflate[\r][\n]"
+14:27:29,147 DEBUG main wire:wire:73 -  >> "[\r][\n]"
+14:27:29,147 DEBUG main headers:sendRequestHeader:278 - >> POST /app/ws/ HTTP/1.1
+14:27:29,147 DEBUG main headers:sendRequestHeader:281 - >> Accept: application/json, application/javascript, text/javascript, text/json
+14:27:29,148 DEBUG main headers:sendRequestHeader:281 - >> Content-Type: application/json
+14:27:29,148 DEBUG main headers:sendRequestHeader:281 - >> Content-Length: 26
+14:27:29,148 DEBUG main headers:sendRequestHeader:281 - >> Host: 178.124.206.46:8001
+14:27:29,150 DEBUG main headers:sendRequestHeader:281 - >> Connection: Keep-Alive
+14:27:29,151 DEBUG main headers:sendRequestHeader:281 - >> User-Agent: Apache-HttpClient/4.5.13 (Java/14.0.2)
+14:27:29,151 DEBUG main headers:sendRequestHeader:281 - >> Accept-Encoding: gzip,deflate
+14:27:29,151 DEBUG main wire:wire:87 -  >> "{"user":"a","strict":true}"
+14:27:29,166 DEBUG main wire:wire:73 -  << "HTTP/1.1 200 OK[\r][\n]"
+14:27:29,169 DEBUG main wire:wire:73 -  << "Date: Sat, 28 May 2022 11:27:29 GMT[\r][\n]"
+14:27:29,169 DEBUG main wire:wire:73 -  << "Server: Apache/2.4.38 (Debian)[\r][\n]"
+14:27:29,169 DEBUG main wire:wire:73 -  << "X-Powered-By: PHP/7.4.1[\r][\n]"
+14:27:29,170 DEBUG main wire:wire:73 -  << "Content-Length: 224[\r][\n]"
+14:27:29,170 DEBUG main wire:wire:73 -  << "Keep-Alive: timeout=5, max=100[\r][\n]"
+14:27:29,171 DEBUG main wire:wire:73 -  << "Connection: Keep-Alive[\r][\n]"
+14:27:29,171 DEBUG main wire:wire:73 -  << "Content-Type: application/json; charset=utf-8[\r][\n]"
+14:27:29,171 DEBUG main wire:wire:73 -  << "[\r][\n]"
+14:27:29,173 DEBUG main DefaultClientConnection:receiveResponseHeader:259 - Receiving response: HTTP/1.1 200 OK
+14:27:29,174 DEBUG main headers:receiveResponseHeader:262 - << HTTP/1.1 200 OK
+14:27:29,174 DEBUG main headers:receiveResponseHeader:265 - << Date: Sat, 28 May 2022 11:27:29 GMT
+14:27:29,175 DEBUG main headers:receiveResponseHeader:265 - << Server: Apache/2.4.38 (Debian)
+14:27:29,175 DEBUG main headers:receiveResponseHeader:265 - << X-Powered-By: PHP/7.4.1
+14:27:29,176 DEBUG main headers:receiveResponseHeader:265 - << Content-Length: 224
+14:27:29,176 DEBUG main headers:receiveResponseHeader:265 - << Keep-Alive: timeout=5, max=100
+14:27:29,176 DEBUG main headers:receiveResponseHeader:265 - << Connection: Keep-Alive
+14:27:29,177 DEBUG main headers:receiveResponseHeader:265 - << Content-Type: application/json; charset=utf-8
+14:27:29,187 DEBUG main DefaultHttpClient:execute:504 - Connection can be kept alive for 5000 MILLISECONDS
+14:27:29,221 DEBUG main RequestSpecificationImpl$RestAssuredHttpBuilder:parseResponse:545 - Parsing response as: application/json; charset=utf-8
+14:27:29,222 DEBUG main RequestSpecificationImpl$RestAssuredHttpBuilder:parseResponse:548 - Parsed data to instance of: class org.apache.http.conn.EofSensorInputStream
+14:27:29,295 DEBUG main wire:wire:73 -  << "{[\n]"
+14:27:29,296 DEBUG main wire:wire:73 -  << "    "code": "0",[\n]"
+14:27:29,297 DEBUG main wire:wire:73 -  << "    "data": [[\n]"
+14:27:29,297 DEBUG main wire:wire:73 -  << "        {[\n]"
+14:27:29,297 DEBUG main wire:wire:73 -  << "            "id": "1",[\n]"
+14:27:29,298 DEBUG main wire:wire:73 -  << "            "username": "a",[\n]"
+14:27:29,298 DEBUG main wire:wire:73 -  << "            "realname": "Alberto Boo",[\n]"
+14:27:29,298 DEBUG main wire:wire:73 -  << "            "password": "b",[\n]"
+14:27:29,298 DEBUG main wire:wire:73 -  << "            "email": "alberto.boo@mail.com"[\n]"
+14:27:29,298 DEBUG main wire:wire:73 -  << "        }[\n]"
+14:27:29,299 DEBUG main wire:wire:73 -  << "    ][\n]"
+14:27:29,299 DEBUG main wire:wire:87 -  << "}"
+14:27:29,300 DEBUG main BasicClientConnectionManager:releaseConnection:200 - Releasing connection org.apache.http.impl.conn.ManagedClientConnectionImpl@576c5536
+14:27:29,300 DEBUG main BasicClientConnectionManager:releaseConnection:225 - Connection can be kept alive for 5000 MILLISECONDS
+14:29:37,401 DEBUG main BasicClientConnectionManager:getConnection:161 - Get connection for route {}->http://178.124.206.46:8001
+14:29:37,425 DEBUG main DefaultClientConnectionOperator:openConnection:177 - Connecting to 178.124.206.46:8001
+14:29:37,483 DEBUG main RequestAddCookies:process:123 - CookieSpec selected: ignoreCookies
+14:29:37,490 DEBUG main RequestAuthCache:process:77 - Auth cache not set in the context
+14:29:37,491 DEBUG main RequestTargetAuthentication:process:80 - Target auth state: UNCHALLENGED
+14:29:37,493 DEBUG main RequestProxyAuthentication:process:89 - Proxy auth state: UNCHALLENGED
+14:29:37,493 DEBUG main DefaultHttpClient:tryExecute:677 - Attempt 1 to execute request
+14:29:37,494 DEBUG main DefaultClientConnection:sendRequestHeader:274 - Sending request: POST /app/ws/ HTTP/1.1
+14:29:37,494 DEBUG main wire:wire:73 -  >> "POST /app/ws/ HTTP/1.1[\r][\n]"
+14:29:37,497 DEBUG main wire:wire:73 -  >> "Accept: application/json, application/javascript, text/javascript, text/json[\r][\n]"
+14:29:37,498 DEBUG main wire:wire:73 -  >> "Content-Type: application/json[\r][\n]"
+14:29:37,499 DEBUG main wire:wire:73 -  >> "Content-Length: 26[\r][\n]"
+14:29:37,499 DEBUG main wire:wire:73 -  >> "Host: 178.124.206.46:8001[\r][\n]"
+14:29:37,500 DEBUG main wire:wire:73 -  >> "Connection: Keep-Alive[\r][\n]"
+14:29:37,500 DEBUG main wire:wire:73 -  >> "User-Agent: Apache-HttpClient/4.5.13 (Java/14.0.2)[\r][\n]"
+14:29:37,500 DEBUG main wire:wire:73 -  >> "Accept-Encoding: gzip,deflate[\r][\n]"
+14:29:37,505 DEBUG main wire:wire:73 -  >> "[\r][\n]"
+14:29:37,506 DEBUG main headers:sendRequestHeader:278 - >> POST /app/ws/ HTTP/1.1
+14:29:37,506 DEBUG main headers:sendRequestHeader:281 - >> Accept: application/json, application/javascript, text/javascript, text/json
+14:29:37,507 DEBUG main headers:sendRequestHeader:281 - >> Content-Type: application/json
+14:29:37,507 DEBUG main headers:sendRequestHeader:281 - >> Content-Length: 26
+14:29:37,508 DEBUG main headers:sendRequestHeader:281 - >> Host: 178.124.206.46:8001
+14:29:37,509 DEBUG main headers:sendRequestHeader:281 - >> Connection: Keep-Alive
+14:29:37,509 DEBUG main headers:sendRequestHeader:281 - >> User-Agent: Apache-HttpClient/4.5.13 (Java/14.0.2)
+14:29:37,510 DEBUG main headers:sendRequestHeader:281 - >> Accept-Encoding: gzip,deflate
+14:29:37,510 DEBUG main wire:wire:87 -  >> "{"user":"a","strict":true}"
+14:29:37,594 DEBUG main wire:wire:73 -  << "HTTP/1.1 200 OK[\r][\n]"
+14:29:37,597 DEBUG main wire:wire:73 -  << "Date: Sat, 28 May 2022 11:29:37 GMT[\r][\n]"
+14:29:37,598 DEBUG main wire:wire:73 -  << "Server: Apache/2.4.38 (Debian)[\r][\n]"
+14:29:37,598 DEBUG main wire:wire:73 -  << "X-Powered-By: PHP/7.4.1[\r][\n]"
+14:29:37,598 DEBUG main wire:wire:73 -  << "Content-Length: 224[\r][\n]"
+14:29:37,599 DEBUG main wire:wire:73 -  << "Keep-Alive: timeout=5, max=100[\r][\n]"
+14:29:37,599 DEBUG main wire:wire:73 -  << "Connection: Keep-Alive[\r][\n]"
+14:29:37,600 DEBUG main wire:wire:73 -  << "Content-Type: application/json; charset=utf-8[\r][\n]"
+14:29:37,600 DEBUG main wire:wire:73 -  << "[\r][\n]"
+14:29:37,601 DEBUG main DefaultClientConnection:receiveResponseHeader:259 - Receiving response: HTTP/1.1 200 OK
+14:29:37,602 DEBUG main headers:receiveResponseHeader:262 - << HTTP/1.1 200 OK
+14:29:37,602 DEBUG main headers:receiveResponseHeader:265 - << Date: Sat, 28 May 2022 11:29:37 GMT
+14:29:37,602 DEBUG main headers:receiveResponseHeader:265 - << Server: Apache/2.4.38 (Debian)
+14:29:37,602 DEBUG main headers:receiveResponseHeader:265 - << X-Powered-By: PHP/7.4.1
+14:29:37,603 DEBUG main headers:receiveResponseHeader:265 - << Content-Length: 224
+14:29:37,603 DEBUG main headers:receiveResponseHeader:265 - << Keep-Alive: timeout=5, max=100
+14:29:37,603 DEBUG main headers:receiveResponseHeader:265 - << Connection: Keep-Alive
+14:29:37,604 DEBUG main headers:receiveResponseHeader:265 - << Content-Type: application/json; charset=utf-8
+14:29:37,612 DEBUG main DefaultHttpClient:execute:504 - Connection can be kept alive for 5000 MILLISECONDS
+14:29:37,642 DEBUG main RequestSpecificationImpl$RestAssuredHttpBuilder:parseResponse:545 - Parsing response as: application/json; charset=utf-8
+14:29:37,644 DEBUG main RequestSpecificationImpl$RestAssuredHttpBuilder:parseResponse:548 - Parsed data to instance of: class org.apache.http.conn.EofSensorInputStream
+14:29:37,721 DEBUG main wire:wire:73 -  << "{[\n]"
+14:29:37,723 DEBUG main wire:wire:73 -  << "    "code": "0",[\n]"
+14:29:37,725 DEBUG main wire:wire:73 -  << "    "data": [[\n]"
+14:29:37,727 DEBUG main wire:wire:73 -  << "        {[\n]"
+14:29:37,727 DEBUG main wire:wire:73 -  << "            "id": "1",[\n]"
+14:29:37,728 DEBUG main wire:wire:73 -  << "            "username": "a",[\n]"
+14:29:37,728 DEBUG main wire:wire:73 -  << "            "realname": "Alberto Boo",[\n]"
+14:29:37,728 DEBUG main wire:wire:73 -  << "            "password": "b",[\n]"
+14:29:37,729 DEBUG main wire:wire:73 -  << "            "email": "alberto.boo@mail.com"[\n]"
+14:29:37,729 DEBUG main wire:wire:73 -  << "        }[\n]"
+14:29:37,729 DEBUG main wire:wire:73 -  << "    ][\n]"
+14:29:37,729 DEBUG main wire:wire:87 -  << "}"
+14:29:37,731 DEBUG main BasicClientConnectionManager:releaseConnection:200 - Releasing connection org.apache.http.impl.conn.ManagedClientConnectionImpl@58112bc4
+14:29:37,731 DEBUG main BasicClientConnectionManager:releaseConnection:225 - Connection can be kept alive for 5000 MILLISECONDS
+15:24:51,666  INFO main MyTestNgListener:onTestStart:14 - Test started null
+15:24:51,682  INFO main NgTestClass:firstTest:16 - Executing firstTest
+15:24:51,689  INFO main MyTestNgListener:onTestSuccess:18 - Test successed null
+15:24:51,691  INFO main MyTestNgListener:onTestStart:14 - Test started null
+15:24:51,692  INFO main NgTestClass:secondTest:22 - Executing secondTest
+15:24:51,711  INFO main MyTestNgListener:onTestFailure:22 - Test failed null
+15:26:15,630  INFO main MyTestNgListener:onTestStart:14 - Test started firstTest
+15:26:15,636  INFO main NgTestClass:firstTest:16 - Executing firstTest
+15:26:15,639  INFO main MyTestNgListener:onTestSuccess:18 - Test successed firstTest
+15:26:15,641  INFO main MyTestNgListener:onTestStart:14 - Test started secondTest
+15:26:15,641  INFO main NgTestClass:secondTest:22 - Executing secondTest
+15:26:15,655  INFO main MyTestNgListener:onTestFailure:22 - Test failed secondTest
+15:49:03,515  INFO main MyTestNgListener:onTestStart:14 - Test started 84651
+15:49:03,522  INFO main NgTestClass:firstTest:16 - Executing firstTest
+15:49:03,527  INFO main MyTestNgListener:onTestSuccess:18 - Test successed 84651
+15:49:03,529  INFO main MyTestNgListener:onTestStart:14 - Test started 84652
+15:49:03,530  INFO main NgTestClass:secondTest:22 - Executing secondTest
+15:49:03,546  INFO main MyTestNgListener:onTestFailure:22 - Test failed 84652
+16:13:51,250  INFO main MyTestNgListener:onTestStart:16 - Test started 84651
+16:13:51,258  INFO main NgTestClass:firstTest:16 - Executing firstTest
+16:13:51,262  INFO main MyTestNgListener:onTestSuccess:20 - Test successed 84651
+16:13:53,052 DEBUG main BasicClientConnectionManager:getConnection:161 - Get connection for route {}->http://178.124.206.46:8000
+16:13:53,080 DEBUG main DefaultClientConnectionOperator:openConnection:177 - Connecting to 178.124.206.46:8000
+16:13:53,135 DEBUG main RequestAddCookies:process:123 - CookieSpec selected: ignoreCookies
+16:13:53,137 DEBUG main RequestAuthCache:process:77 - Auth cache not set in the context
+16:13:53,137 DEBUG main RequestProxyAuthentication:process:89 - Proxy auth state: UNCHALLENGED
+16:13:53,138 DEBUG main DefaultHttpClient:tryExecute:677 - Attempt 1 to execute request
+16:13:53,138 DEBUG main DefaultClientConnection:sendRequestHeader:274 - Sending request: POST /index.php?%2Fapi%2Fv2%2Fadd_result_for_case%2F1581%2F84651 HTTP/1.1
+16:13:53,138 DEBUG main wire:wire:73 -  >> "POST /index.php?%2Fapi%2Fv2%2Fadd_result_for_case%2F1581%2F84651 HTTP/1.1[\r][\n]"
+16:13:53,139 DEBUG main wire:wire:73 -  >> "Authorization: Basic ZmFrZW1haWxAdGVjaC5jbzpBYmMxMjM=[\r][\n]"
+16:13:53,140 DEBUG main wire:wire:73 -  >> "Accept: application/json, application/javascript, text/javascript, text/json[\r][\n]"
+16:13:53,140 DEBUG main wire:wire:73 -  >> "Content-Type: application/json[\r][\n]"
+16:13:53,140 DEBUG main wire:wire:73 -  >> "Content-Length: 15[\r][\n]"
+16:13:53,140 DEBUG main wire:wire:73 -  >> "Host: 178.124.206.46:8000[\r][\n]"
+16:13:53,141 DEBUG main wire:wire:73 -  >> "Connection: Keep-Alive[\r][\n]"
+16:13:53,142 DEBUG main wire:wire:73 -  >> "User-Agent: Apache-HttpClient/4.5.13 (Java/14.0.2)[\r][\n]"
+16:13:53,142 DEBUG main wire:wire:73 -  >> "Accept-Encoding: gzip,deflate[\r][\n]"
+16:13:53,143 DEBUG main wire:wire:73 -  >> "[\r][\n]"
+16:13:53,143 DEBUG main headers:sendRequestHeader:278 - >> POST /index.php?%2Fapi%2Fv2%2Fadd_result_for_case%2F1581%2F84651 HTTP/1.1
+16:13:53,143 DEBUG main headers:sendRequestHeader:281 - >> Authorization: Basic ZmFrZW1haWxAdGVjaC5jbzpBYmMxMjM=
+16:13:53,144 DEBUG main headers:sendRequestHeader:281 - >> Accept: application/json, application/javascript, text/javascript, text/json
+16:13:53,144 DEBUG main headers:sendRequestHeader:281 - >> Content-Type: application/json
+16:13:53,144 DEBUG main headers:sendRequestHeader:281 - >> Content-Length: 15
+16:13:53,145 DEBUG main headers:sendRequestHeader:281 - >> Host: 178.124.206.46:8000
+16:13:53,145 DEBUG main headers:sendRequestHeader:281 - >> Connection: Keep-Alive
+16:13:53,145 DEBUG main headers:sendRequestHeader:281 - >> User-Agent: Apache-HttpClient/4.5.13 (Java/14.0.2)
+16:13:53,146 DEBUG main headers:sendRequestHeader:281 - >> Accept-Encoding: gzip,deflate
+16:13:53,146 DEBUG main wire:wire:87 -  >> "{"status_id":1}"
+16:13:53,547 DEBUG main wire:wire:73 -  << "HTTP/1.1 200 OK[\r][\n]"
+16:13:53,548 DEBUG main wire:wire:73 -  << "Date: Sat, 04 Jun 2022 13:13:52 GMT[\r][\n]"
+16:13:53,549 DEBUG main wire:wire:73 -  << "Server: Apache/2.4.38 (Debian)[\r][\n]"
+16:13:53,549 DEBUG main wire:wire:73 -  << "X-Powered-By: PHP/7.2.25[\r][\n]"
+16:13:53,549 DEBUG main wire:wire:73 -  << "Set-Cookie: tr_session=5c7d6df3-9732-4722-83f5-095ad126920b; HttpOnly[\r][\n]"
+16:13:53,549 DEBUG main wire:wire:73 -  << "Content-Length: 212[\r][\n]"
+16:13:53,550 DEBUG main wire:wire:73 -  << "Keep-Alive: timeout=5, max=100[\r][\n]"
+16:13:53,550 DEBUG main wire:wire:73 -  << "Connection: Keep-Alive[\r][\n]"
+16:13:53,550 DEBUG main wire:wire:73 -  << "Content-Type: application/json; charset=utf-8[\r][\n]"
+16:13:53,550 DEBUG main wire:wire:73 -  << "[\r][\n]"
+16:13:53,551 DEBUG main DefaultClientConnection:receiveResponseHeader:259 - Receiving response: HTTP/1.1 200 OK
+16:13:53,551 DEBUG main headers:receiveResponseHeader:262 - << HTTP/1.1 200 OK
+16:13:53,551 DEBUG main headers:receiveResponseHeader:265 - << Date: Sat, 04 Jun 2022 13:13:52 GMT
+16:13:53,552 DEBUG main headers:receiveResponseHeader:265 - << Server: Apache/2.4.38 (Debian)
+16:13:53,552 DEBUG main headers:receiveResponseHeader:265 - << X-Powered-By: PHP/7.2.25
+16:13:53,552 DEBUG main headers:receiveResponseHeader:265 - << Set-Cookie: tr_session=5c7d6df3-9732-4722-83f5-095ad126920b; HttpOnly
+16:13:53,552 DEBUG main headers:receiveResponseHeader:265 - << Content-Length: 212
+16:13:53,552 DEBUG main headers:receiveResponseHeader:265 - << Keep-Alive: timeout=5, max=100
+16:13:53,553 DEBUG main headers:receiveResponseHeader:265 - << Connection: Keep-Alive
+16:13:53,553 DEBUG main headers:receiveResponseHeader:265 - << Content-Type: application/json; charset=utf-8
+16:13:53,557 DEBUG main DefaultHttpClient:execute:504 - Connection can be kept alive for 5000 MILLISECONDS
+16:13:53,572 DEBUG main RequestSpecificationImpl$RestAssuredHttpBuilder:parseResponse:545 - Parsing response as: application/json; charset=utf-8
+16:13:53,572 DEBUG main RequestSpecificationImpl$RestAssuredHttpBuilder:parseResponse:548 - Parsed data to instance of: class org.apache.http.conn.EofSensorInputStream
+16:13:53,620 DEBUG main wire:wire:87 -  << "{"id":93751,"test_id":183511,"status_id":1,"created_by":179,"created_on":1654348433,"assignedto_id":null,"comment":null,"version":null,"elapsed":null,"defects":null,"custom_step_results":null,"attachment_ids":[]}"
+16:13:53,621 DEBUG main BasicClientConnectionManager:releaseConnection:200 - Releasing connection org.apache.http.impl.conn.ManagedClientConnectionImpl@1fde0371
+16:13:53,622 DEBUG main BasicClientConnectionManager:releaseConnection:225 - Connection can be kept alive for 5000 MILLISECONDS
+16:13:53,625  INFO main MyTestNgListener:onTestStart:16 - Test started 84652
+16:13:53,625  INFO main NgTestClass:secondTest:22 - Executing secondTest
+16:13:53,639  INFO main MyTestNgListener:onTestFailure:25 - Test failed 84652
+16:13:53,658 DEBUG main BasicClientConnectionManager:getConnection:161 - Get connection for route {}->http://178.124.206.46:8000
+16:13:53,658 DEBUG main DefaultClientConnectionOperator:openConnection:177 - Connecting to 178.124.206.46:8000
+16:13:53,698 DEBUG main RequestAddCookies:process:123 - CookieSpec selected: ignoreCookies
+16:13:53,699 DEBUG main RequestAuthCache:process:77 - Auth cache not set in the context
+16:13:53,699 DEBUG main RequestProxyAuthentication:process:89 - Proxy auth state: UNCHALLENGED
+16:13:53,699 DEBUG main DefaultHttpClient:tryExecute:677 - Attempt 1 to execute request
+16:13:53,699 DEBUG main DefaultClientConnection:sendRequestHeader:274 - Sending request: POST /index.php?%2Fapi%2Fv2%2Fadd_result_for_case%2F1581%2F84652 HTTP/1.1
+16:13:53,700 DEBUG main wire:wire:73 -  >> "POST /index.php?%2Fapi%2Fv2%2Fadd_result_for_case%2F1581%2F84652 HTTP/1.1[\r][\n]"
+16:13:53,701 DEBUG main wire:wire:73 -  >> "Authorization: Basic ZmFrZW1haWxAdGVjaC5jbzpBYmMxMjM=[\r][\n]"
+16:13:53,701 DEBUG main wire:wire:73 -  >> "Accept: application/json, application/javascript, text/javascript, text/json[\r][\n]"
+16:13:53,702 DEBUG main wire:wire:73 -  >> "Content-Type: application/json[\r][\n]"
+16:13:53,702 DEBUG main wire:wire:73 -  >> "Content-Length: 15[\r][\n]"
+16:13:53,702 DEBUG main wire:wire:73 -  >> "Host: 178.124.206.46:8000[\r][\n]"
+16:13:53,703 DEBUG main wire:wire:73 -  >> "Connection: Keep-Alive[\r][\n]"
+16:13:53,703 DEBUG main wire:wire:73 -  >> "User-Agent: Apache-HttpClient/4.5.13 (Java/14.0.2)[\r][\n]"
+16:13:53,704 DEBUG main wire:wire:73 -  >> "Accept-Encoding: gzip,deflate[\r][\n]"
+16:13:53,704 DEBUG main wire:wire:73 -  >> "[\r][\n]"
+16:13:53,704 DEBUG main headers:sendRequestHeader:278 - >> POST /index.php?%2Fapi%2Fv2%2Fadd_result_for_case%2F1581%2F84652 HTTP/1.1
+16:13:53,704 DEBUG main headers:sendRequestHeader:281 - >> Authorization: Basic ZmFrZW1haWxAdGVjaC5jbzpBYmMxMjM=
+16:13:53,705 DEBUG main headers:sendRequestHeader:281 - >> Accept: application/json, application/javascript, text/javascript, text/json
+16:13:53,705 DEBUG main headers:sendRequestHeader:281 - >> Content-Type: application/json
+16:13:53,705 DEBUG main headers:sendRequestHeader:281 - >> Content-Length: 15
+16:13:53,706 DEBUG main headers:sendRequestHeader:281 - >> Host: 178.124.206.46:8000
+16:13:53,706 DEBUG main headers:sendRequestHeader:281 - >> Connection: Keep-Alive
+16:13:53,706 DEBUG main headers:sendRequestHeader:281 - >> User-Agent: Apache-HttpClient/4.5.13 (Java/14.0.2)
+16:13:53,706 DEBUG main headers:sendRequestHeader:281 - >> Accept-Encoding: gzip,deflate
+16:13:53,707 DEBUG main wire:wire:87 -  >> "{"status_id":5}"
+16:13:53,979 DEBUG main wire:wire:73 -  << "HTTP/1.1 200 OK[\r][\n]"
+16:13:53,980 DEBUG main wire:wire:73 -  << "Date: Sat, 04 Jun 2022 13:13:53 GMT[\r][\n]"
+16:13:53,980 DEBUG main wire:wire:73 -  << "Server: Apache/2.4.38 (Debian)[\r][\n]"
+16:13:53,980 DEBUG main wire:wire:73 -  << "X-Powered-By: PHP/7.2.25[\r][\n]"
+16:13:53,980 DEBUG main wire:wire:73 -  << "Set-Cookie: tr_session=ca4301a7-ad0d-4b23-88ab-4f4ba89e4b0e; HttpOnly[\r][\n]"
+16:13:53,981 DEBUG main wire:wire:73 -  << "Content-Length: 212[\r][\n]"
+16:13:53,981 DEBUG main wire:wire:73 -  << "Keep-Alive: timeout=5, max=100[\r][\n]"
+16:13:53,981 DEBUG main wire:wire:73 -  << "Connection: Keep-Alive[\r][\n]"
+16:13:53,981 DEBUG main wire:wire:73 -  << "Content-Type: application/json; charset=utf-8[\r][\n]"
+16:13:53,981 DEBUG main wire:wire:73 -  << "[\r][\n]"
+16:13:53,981 DEBUG main DefaultClientConnection:receiveResponseHeader:259 - Receiving response: HTTP/1.1 200 OK
+16:13:53,982 DEBUG main headers:receiveResponseHeader:262 - << HTTP/1.1 200 OK
+16:13:53,982 DEBUG main headers:receiveResponseHeader:265 - << Date: Sat, 04 Jun 2022 13:13:53 GMT
+16:13:53,982 DEBUG main headers:receiveResponseHeader:265 - << Server: Apache/2.4.38 (Debian)
+16:13:53,982 DEBUG main headers:receiveResponseHeader:265 - << X-Powered-By: PHP/7.2.25
+16:13:53,982 DEBUG main headers:receiveResponseHeader:265 - << Set-Cookie: tr_session=ca4301a7-ad0d-4b23-88ab-4f4ba89e4b0e; HttpOnly
+16:13:53,982 DEBUG main headers:receiveResponseHeader:265 - << Content-Length: 212
+16:13:53,983 DEBUG main headers:receiveResponseHeader:265 - << Keep-Alive: timeout=5, max=100
+16:13:53,983 DEBUG main headers:receiveResponseHeader:265 - << Connection: Keep-Alive
+16:13:53,983 DEBUG main headers:receiveResponseHeader:265 - << Content-Type: application/json; charset=utf-8
+16:13:53,983 DEBUG main DefaultHttpClient:execute:504 - Connection can be kept alive for 5000 MILLISECONDS
+16:13:53,984 DEBUG main RequestSpecificationImpl$RestAssuredHttpBuilder:parseResponse:545 - Parsing response as: application/json; charset=utf-8
+16:13:53,984 DEBUG main RequestSpecificationImpl$RestAssuredHttpBuilder:parseResponse:548 - Parsed data to instance of: class org.apache.http.conn.EofSensorInputStream
+16:13:53,986 DEBUG main wire:wire:87 -  << "{"id":93752,"test_id":183512,"status_id":5,"created_by":179,"created_on":1654348433,"assignedto_id":null,"comment":null,"version":null,"elapsed":null,"defects":null,"custom_step_results":null,"attachment_ids":[]}"
+16:13:53,986 DEBUG main BasicClientConnectionManager:releaseConnection:200 - Releasing connection org.apache.http.impl.conn.ManagedClientConnectionImpl@574cd322
+16:13:53,987 DEBUG main BasicClientConnectionManager:releaseConnection:225 - Connection can be kept alive for 5000 MILLISECONDS

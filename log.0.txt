@@ -1,0 +1,5 @@
+мая 15, 2022 3:47:21 pm ClassWork19Logging.DefaultLogging main SEVERE: Message with level SEVERE
+мая 15, 2022 3:47:21 pm ClassWork19Logging.DefaultLogging main WARNING: Message with level WARNING
+мая 15, 2022 3:47:21 pm ClassWork19Logging.DefaultLogging main INFO: Message with level INFO
+мая 15, 2022 3:47:21 pm ClassWork19Logging.DefaultLogging main CONFIG: Message with level CONFIG
+мая 15, 2022 3:47:21 pm ClassWork19Logging.DefaultLogging main FINE: Message with level FINE
